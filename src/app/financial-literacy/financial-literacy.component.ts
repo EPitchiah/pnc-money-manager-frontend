@@ -37,7 +37,7 @@ export class FinancialLiteracyComponent implements OnInit {
   }
   
   ngOnInit(): void {
-    this.http.get<CourseCategory>('http://localhost:4000/course').subscribe(data => {
+    this.http.get<CourseCategory>('https://pnc-money-manager-backend-production.up.railway.app/course').subscribe(data => {
       this.basicCourses = data.basicCourses;
       this.intermediateCourses = data.intermediateCourses;
       this.advancedCourses = data.advancedCourses;

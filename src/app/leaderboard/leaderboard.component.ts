@@ -93,7 +93,7 @@ export class LeaderboardComponent implements OnInit {
   }  
   
   getLeaderboardData(): void {
-    this.http.get<LeaderboardEntry[]>('http://localhost:4000/leader').subscribe(data => {
+    this.http.get<LeaderboardEntry[]>('https://pnc-money-manager-backend-production.up.railway.app/leader').subscribe(data => {
       this.leaderboardData = data;
       this.updateFilteredLeaderboard();
     });

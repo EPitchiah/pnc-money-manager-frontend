@@ -93,7 +93,7 @@ export class SettingsComponent implements OnInit{
       date: formattedDate
     };
 
-    this.http.get<Login[]>('http://localhost:4000/login').subscribe(data => {
+    this.http.get<Login[]>('https://pnc-money-manager-backend-production.up.railway.app/login').subscribe(data => {
       // Find the account based on the child's account number
       this.history = data;
       this.history.unshift(newLogin);

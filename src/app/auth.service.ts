@@ -14,7 +14,7 @@ export class AuthService{
 
   constructor(private http: HttpClient)
   {
-    this.http.get<any>('http://localhost:4000/child').subscribe(data => {
+    this.http.get<any>('https://pnc-money-manager-backend-production.up.railway.app/child').subscribe(data => {
       // Find the account based on the child's account number
       this.account = data.find((entry: any) => entry.spendingAccount.accountNumber === this.account_num
         || entry.savingsAccount.accountNumber === this.account_num);
@@ -34,7 +34,7 @@ export class AuthService{
     this.password = password;
   }
   setAccount(account: number) {
-    this.http.get<any>('http://localhost:4000/child').subscribe(data => {
+    this.http.get<any>('https://pnc-money-manager-backend-production.up.railway.app/child').subscribe(data => {
       // Find the account based on the child's account number
       this.account = data.find((entry: any) => entry.spendingAccount.accountNumber === account
         || entry.savingsAccount.accountNumber === account);
@@ -43,7 +43,7 @@ export class AuthService{
   }
   addAccount(account: number) {
     var temp = this.account;
-    this.http.get<any>('http://localhost:4000/child').subscribe(data => {
+    this.http.get<any>('https://pnc-money-manager-backend-production.up.railway.app/child').subscribe(data => {
       // Find the account based on the child's account number
       temp = data.find((entry: any) => entry.spendingAccount.accountNumber === account
         || entry.savingsAccount.accountNumber === account);
@@ -68,7 +68,7 @@ export class AuthService{
     return this.allAccounts;
   }
   getLeaderboard(): any[] {
-    this.http.get<any[]>('http://localhost:4000/leader').subscribe(data => {
+    this.http.get<any[]>('https://pnc-money-manager-backend-production.up.railway.app/leader').subscribe(data => {
       this.leaderboard = data;
       console.log("This is the leaderboard info: ", this.leaderboard);
     });

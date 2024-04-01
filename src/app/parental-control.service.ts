@@ -101,7 +101,7 @@ export class ParentalControl {
   setBudgetAmount(value: number) {
     const account = this.authService.getAccount();
     account.spendingAccount.monthlyBudget = value;
-    this.http.put<BankAccount>('http://localhost:4000/child', account).subscribe(
+    this.http.put<BankAccount>('https://pnc-money-manager-backend-production.up.railway.app/child', account).subscribe(
       response => {
         console.log('Account updated successfully:', response);
       },
@@ -119,7 +119,7 @@ export class ParentalControl {
   setMatchingPercentage(value: number) {
     const account = this.authService.getAccount();
     account.savingsAccount.parentalPercentMatch = value;
-    this.http.put<BankAccount>('http://localhost:4000/child', account).subscribe(
+    this.http.put<BankAccount>('https://pnc-money-manager-backend-production.up.railway.app/child', account).subscribe(
       response => {
         console.log('Account updated successfully:', response);
       },

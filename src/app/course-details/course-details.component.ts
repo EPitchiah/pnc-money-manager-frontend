@@ -30,7 +30,7 @@ export class CourseDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.courseTitle = params['title'];
-      this.http.get<any>('http://localhost:4000/course').subscribe(data => {
+      this.http.get<any>('https://pnc-money-manager-backend-production.up.railway.app/course').subscribe(data => {
         this.course = data.basicCourses.concat(data.intermediateCourses, data.advancedCourses)
           .find((course: Course) => course.title === this.courseTitle);
       });

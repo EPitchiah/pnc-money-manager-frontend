@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit{
   {
     this.account = this.authService.getAccount()
     this.username = this.authService.getUsername();
-    this.http.get<ParentAccount>('http://localhost:4000/parent').subscribe(data => {
+    this.http.get<ParentAccount>('https://pnc-money-manager-backend-production.up.railway.app/parent').subscribe(data => {
       this.parent = data;
       console.log(data);
     });
