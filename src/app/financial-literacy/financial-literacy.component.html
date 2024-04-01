@@ -1,0 +1,51 @@
+<body>
+
+    <div class="mat-header">
+        <h1>Financial Literacy Checkpoint</h1>
+        <h2>Take financial courses and earn credits!</h2>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>Total Points Earned: 20 Points</h3>
+        </div>
+        <div class="flex-item">
+            <h3>User Score Impact - March 2024: +15%</h3>
+        </div>
+        <button class="styling" (click)="backToLeaderboard()">Back to Leaderboard</button>
+    </div>
+    
+    <div style="padding: 20px;">
+        <select (change)="filterCoursesByTrack($event)">
+            <option value="all">All Tracks</option>
+            <option *ngFor="let track of allTracks" [value]="track">{{ track }}</option>
+        </select>
+    </div>
+
+    <h1 class="sections">Basic Courses</h1>
+    <div class="course-section">
+    <div class="course-tile" *ngFor="let course of filteredBasicCourses" (click)="navigateToCourse(course.title)">
+        <h2>{{ course.title }}</h2>
+        <h3>{{ course.credits }}</h3>
+        <p>{{ course.description }}</p>
+    </div>
+    </div>
+
+    <h1 class="sections">Intermediate Courses</h1>
+    <div class="course-section">
+    <div class="course-tile" *ngFor="let course of filteredIntermediateCourses" (click)="navigateToCourse(course.title)">
+        <h2>{{ course.title }}</h2>
+        <h3>{{ course.credits }}</h3>
+        <p>{{ course.description }}</p>
+    </div>
+    </div>
+
+    <h1 class="sections">Advanced Courses</h1>
+    <div class="course-section">
+    <div class="course-tile" *ngFor="let course of filteredAdvancedCourses" (click)="navigateToCourse(course.title)">
+        <h2>{{ course.title }}</h2>
+        <h3>{{ course.credits }}</h3>
+        <p>{{ course.description }}</p>
+    </div>
+    </div>
+
+</body>

@@ -1,0 +1,93 @@
+ body
+ {
+    margin: 5%;
+ }
+
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px; /* Added padding for some breathing room */
+    box-sizing: border-box; /* Ensure padding does not add to the width */
+    margin-top: 20px;
+}
+
+.settings-container {
+    margin-bottom: 0;
+}
+
+/* Styles for each section for better visual separation */
+.section {
+    margin-bottom: 30px;
+}
+
+.settings-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distributes buttons evenly */
+    margin-bottom: 20px; /* Space between buttons and toggles section */
+}
+
+.permission-list
+{
+    padding: 30px;
+    background-color: #f5f5f5;
+
+}
+
+/* Button styling */
+button {
+    background-color: #ff5400;
+    color: #f5f5f5;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px 0; /* Adds a little vertical space between buttons */
+}
+
+/* Style for setting rows within the sections */
+.setting-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Space between setting rows */
+}
+
+/* Align titles to the left */
+.setting-title {
+    flex-basis: 50%;
+}
+
+/* Encapsulate toggles and amount inputs for alignment */
+.setting-toggle, .setting-amount {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 50%;
+}
+
+/* Customizing the toggle and input fields specifically */
+.toggle, mat-form-field {
+    margin-left: 10px; /* Ensures a gap between text and toggle/input */
+}
+
+.toggle-solo {
+    margin-right: 66.66%;
+}
+
+    .setting-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .setting-title, .setting-toggle, .setting-amount {
+        flex-basis: 100%; /* Allows each element to take full width */
+        justify-content: flex-start; /* Aligns content to the start on smaller screens */
+    }
+
+    .toggle, mat-form-field {
+        margin-left: 0; /* Adjusts margin when in column layout */
+        margin-top: 5px; /* Adds a little space between label and toggle/input */
+    }

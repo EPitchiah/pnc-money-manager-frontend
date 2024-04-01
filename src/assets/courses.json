@@ -1,0 +1,758 @@
+{
+    "basicCourses": [
+        {
+            "title": "Introduction to Money Management",
+            "credits": "+1 Point",
+            "description": "Learn the basics of managing money effectively.",
+            "track": "Money Basics",
+            "prerequisite": null,
+            "details": "Introduction to Money Management is designed to provide participants with essential knowledge and skills for effective financial management. Topics covered include budgeting, saving strategies, and debt management. Participants will learn practical techniques to establish and maintain a healthy financial foundation.",
+            "tableOfContents": {
+                "chapter1": {
+                    "title": "Understanding Personal Finance",
+                    "subsections": ["Budgeting Basics", "Income and Expenses", "Financial Goals"]
+                },
+                "chapter2": {
+                    "title": "Saving Strategies",
+                    "subsections": ["Emergency Funds", "Short-Term vs. Long-Term Savings", "Automating Savings"]
+                },
+                "chapter3": {
+                    "title": "Debt Management",
+                    "subsections": ["Types of Debt", "Debt Repayment Strategies", "Avoiding Debt Traps"]
+                }
+            },
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXtoW0OS6EmnSaN1x-LcZfDN-M69PjS2887wsf2cDXGw&s"
+        },
+        {
+            "title": "Understanding Needs vs. Wants",
+            "credits": "+1 Point",
+            "description": "Develop skills to differentiate between essential and discretionary spending.",
+            "track": "Money Basics",
+            "prerequisite": null,
+            "details": "Understanding Needs vs. Wants explores the concept of essential versus discretionary spending to help participants make informed financial decisions. By understanding the difference between needs and wants, participants can prioritize their spending and achieve their financial goals.",
+            "tableOfContents": {
+                "chapter1": {
+                    "title": "Identifying Needs",
+                    "subsections": ["Basic Needs vs. Luxuries", "Maslow's Hierarchy of Needs", "Needs Assessment"]
+                },
+                "chapter2": {
+                    "title": "Understanding Wants",
+                    "subsections": ["Desires vs. Necessities", "Impulse Buying", "Cultural Influences on Wants"]
+                },
+                "chapter3": {
+                    "title": "Balancing Needs and Wants",
+                    "subsections": ["Budgeting for Essentials", "Discretionary Spending Tips", "Setting Spending Priorities"]
+                }
+            },
+            "image": "https://media.zenfs.com/en-US/smartasset_475/9cfcca307b4c9e58fb522a0961000234"
+        },
+        {
+            "title": "Saving for Goals",
+            "credits": "+1 Point",
+            "description": "Discover strategies for saving money towards achieving objectives.",
+            "track": "Money Basics",
+            "prerequisite": null,
+            "details": "Saving for Goals provides participants with practical techniques to save money effectively for various objectives, such as emergencies, education, or retirement. By setting specific savings goals and implementing targeted saving strategies, participants can enhance their financial security and achieve their aspirations.",
+            "tableOfContents": {
+                "chapter1": {
+                    "title": "Setting Financial Goals",
+                    "subsections": ["Short-Term vs. Long-Term Goals", "SMART Goals Framework", "Prioritizing Goals"]
+                },
+                "chapter2": {
+                    "title": "Creating a Savings Plan",
+                    "subsections": ["Budgeting for Savings", "Automating Contributions", "Tracking Progress"]
+                },
+                "chapter3": {
+                    "title": "Maximizing Savings",
+                    "subsections": ["Reducing Expenses", "Increasing Income Streams", "Utilizing Tax-Advantaged Accounts"]
+                }
+            },
+            "image": "https://www.foresters.com/-/media/forestersmvc/images/uk/articles/control-finances-banner.jpg"
+        },
+        {
+            "title": "Understanding Money: Coins and Bills",
+            "credits": "+1 Point",
+            "description": "Explore the basics of different types of currency.",
+            "track": "Smart Spending",
+            "prerequisite": null,
+            "details": "Understanding Money: Coins and Bills familiarizes participants with various types of currency, including coins and banknotes, and their denominations. Participants will learn to identify and differentiate between different denominations, enhancing their understanding of monetary transactions.",
+            "tableOfContents": {
+                "chapter1": {
+                    "title": "Introduction to Currency",
+                    "subsections": ["History of Money", "Types of Currency", "Currency Symbols"]
+                },
+                "chapter2": {
+                    "title": "Identifying Coins",
+                    "subsections": ["Coin Designs", "Coin Values", "Coin Collecting"]
+                },
+                "chapter3": {
+                    "title": "Recognizing Banknotes",
+                    "subsections": ["Security Features", "Banknote Design Elements", "Banknote Preservation"]
+                }
+            },
+            "image": "https://as1.ftcdn.net/v2/jpg/01/18/95/84/1000_F_118958420_W9cjkQhGk4MdroZULGTs6xjc0HbosHgE.jpg"
+        },
+        {
+            "title": "Making Smart Purchases",
+            "credits": "+1 Point",
+            "description": "Learn how to make informed decisions when buying goods and services.",
+            "track": "Smart Spending",
+            "prerequisite": null,
+            "details": "Making Smart Purchases equips participants with the knowledge and skills to make informed decisions when purchasing goods and services. Participants will learn to evaluate product quality, compare prices, and consider factors such as value and utility, leading to more satisfying and cost-effective purchases.",
+            "tableOfContents": {
+                "chapter1": {
+                    "title": "Researching Products",
+                    "subsections": ["Reading Reviews", "Comparing Features", "Evaluating Specifications"]
+                },
+                "chapter2": {
+                    "title": "Budgeting for Purchases",
+                    "subsections": ["Determining Affordability", "Setting Spending Limits", "Avoiding Impulse Buying"]
+                },
+                "chapter3": {
+                    "title": "Negotiating Deals",
+                    "subsections": ["Haggling Techniques", "Leveraging Discounts", "Price Matching Strategies"]
+                }
+            },
+            "image": "https://education.savvymoney.com/wp-content/uploads/2023/10/3-Common-Money-Mistakes-According-to-Behavioral-Finance.jpg"
+        },
+        {
+            "title": "Comparing Prices and Discounts",
+            "credits": "+1 Point",
+            "description": "Understand how to evaluate prices and identify discounts effectively.",
+            "track": "Smart Spending",
+            "prerequisite": null,
+            "details": "Comparing Prices and Discounts teaches participants effective strategies for evaluating prices and identifying discounts to optimize their purchasing power. Participants will learn to analyze pricing structures, assess discount offers, and calculate potential savings, enabling them to make cost-conscious buying decisions.",
+            "tableOfContents": {
+                "chapter1": {
+                    "title": "Understanding Pricing",
+                    "subsections": ["Factors Affecting Pricing", "Pricing Models", "Price Discrimination"]
+                },
+                "chapter2": {
+                    "title": "Evaluating Discounts",
+                    "subsections": ["Percentage vs. Dollar Discounts", "Discount Codes", "Bulk Purchase Discounts"]
+                },
+                "chapter3": {
+                    "title": "Comparison Shopping",
+                    "subsections": ["Online vs. In-Store Prices", "Price Matching Policies", "Seasonal Sales Analysis"]
+                }
+            },
+            "image": "https://media.istockphoto.com/id/1280898291/vector/price-over-value-on-the-balance-scale.jpg?s=612x612&w=0&k=20&c=oV6JD05AhFlW0pUtc76CRFlY8akAxAbyd7kyMh__fIc="
+        },
+        {
+            "title": "Introduction to Banks and Banking",
+            "credits": "+1 Point",
+            "description": "Gain basic knowledge about banks and their functions.",
+            "track": "Banking Basics",
+            "prerequisite": null,
+            "details": "Introduction to Banks and Banking provides participants with an overview of the banking industry and its essential functions. Participants will learn about the role of banks, types of banking services, and the importance of banking relationships in managing personal finances.",
+            "tableOfContents": {
+                "chapter1": {
+                    "title": "Banking Fundamentals",
+                    "subsections": ["History of Banking", "Types of Banks", "Banking Regulations"]
+                },
+                "chapter2": {
+                    "title": "Banking Services",
+                    "subsections": ["Checking Accounts", "Savings Accounts", "Certificates of Deposit (CDs)"]
+                },
+                "chapter3": {
+                    "title": "Banking Operations",
+                    "subsections": ["Deposits and Withdrawals", "Transfers and Payments", "ATM Usage"]
+                }
+            },
+            "image": "https://img.freepik.com/free-vector/finance-services-financial-transaction-e-commerce-e-payment_335657-3134.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1711324800&semt=ais"
+        },
+        {
+            "title": "Opening a Bank Account",
+            "credits": "+1 Point",
+            "description": "Learn how to open and manage a personal bank account.",
+            "track": "Banking Basics",
+            "prerequisite": null,
+            "details": "Opening a Bank Account guides participants through the process of opening and managing a personal bank account. Participants will learn about account types, required documentation, and basic account management practices, empowering them to establish and maintain their banking relationships effectively.",
+            "tableOfContents": {
+                "chapter1": {
+                    "title": "Choosing the Right Account",
+                    "subsections": ["Checking vs. Savings Accounts", "Account Features", "Fee Structures"]
+                },
+                "chapter2": {
+                    "title": "Account Opening Procedures",
+                    "subsections": ["Documentation Requirements", "Application Process", "Initial Deposit"]
+                },
+                "chapter3": {
+                    "title": "Account Management",
+                    "subsections": ["Balancing Statements", "Online Banking", "Managing Overdrafts"]
+                }
+            },
+            "image": "https://media.istockphoto.com/id/1156846675/photo/bank-savings-bank.jpg?s=612x612&w=0&k=20&c=cRVWDoyBtJIY-GHO41cEegpNSPxEKVBJMoRc0G3N1cw="
+        },
+        {
+            "title": "Understanding ATM and Debit Cards",
+            "credits": "+1 Point",
+            "description": "Discover how automated teller machines and debit cards work.",
+            "track": "Banking Basics",
+            "prerequisite": null,
+            "details": "Understanding ATM and Debit Cards educates participants about the functionality and usage of automated teller machines (ATMs) and debit cards. Participants will learn how to perform transactions, access funds, and ensure security when using ATMs and debit cards for financial transactions.",
+            "tableOfContents": {
+                "chapter1": {
+                    "title": "ATM Basics",
+                    "subsections": ["ATM Components", "ATM Transactions", "ATM Safety Tips"]
+                },
+                "chapter2": {
+                    "title": "Debit Card Usage",
+                    "subsections": ["Making Purchases", "Withdrawing Cash", "Managing PINs"]
+                },
+                "chapter3": {
+                    "title": "Debit Card Security",
+                    "subsections": ["Fraud Prevention Measures", "Lost or Stolen Cards", "Reporting Suspicious Activity"]
+                }
+            },
+            "image": "https://www.thebalancemoney.com/thmb/TCXgMiopZwkgxksrYWn3gh5IK7c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/stacked-credit-cards-480920118-00ee729e90f544cb8fdb3e246effb2bc.jpg"
+        },
+        {
+            "title": "The Importance of Saving",
+            "credits": "+1 Point",
+            "description": "Understand the significance of saving money for future needs.",
+            "track": "Saving and Investing",
+            "prerequisite": null,
+            "details": "The Importance of Saving highlights the critical role of saving money in achieving financial stability and meeting future needs. Participants will learn about the benefits of saving, such as emergency preparedness, wealth accumulation, and financial independence, motivating them to prioritize saving in their financial plans.",
+            "tableOfContents": {
+                "chapter1": {
+                    "title": "Benefits of Saving",
+                    "subsections": ["Emergency Preparedness", "Wealth Accumulation", "Financial Freedom"]
+                },
+                "chapter2": {
+                    "title": "Understanding Interest",
+                    "subsections": ["Simple vs. Compound Interest", "Interest Calculation", "Interest Rate Factors"]
+                },
+                "chapter3": {
+                    "title": "Savings Strategies",
+                    "subsections": ["Pay Yourself First", "Automatic Savings", "Setting Savings Goals"]
+                }
+            },
+            "image": "https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/blog/importance-of-having-savings-717x404.jpg"
+        },
+        {
+            "title": "Types of Savings Accounts",
+            "credits": "+1 Point",
+            "description": "Explore different types of savings accounts and their features.",
+            "track": "Saving and Investing",
+            "prerequisite": null,
+            "details": "Types of Savings Accounts introduces participants to various types of savings accounts available at financial institutions and their unique features. Participants will learn to compare account options, assess interest rates and fees, and select accounts that align with their financial goals and preferences.",
+            "tableOfContents": {
+                "chapter1": {
+                    "title": "Basic Savings Accounts",
+                    "subsections": ["Minimum Balance Requirements", "Interest Rates", "Transaction Limits"]
+                },
+                "chapter2": {
+                    "title": "High-Yield Savings Accounts",
+                    "subsections": ["Interest Rates", "Account Access", "Fees and Requirements"]
+                },
+                "chapter3": {
+                    "title": "Specialty Savings Accounts",
+                    "subsections": ["Money Market Accounts", "Certificate of Deposit (CDs)", "Health Savings Accounts (HSAs)"]
+                }
+            },
+            "image": "https://www.nj.com/personal-finance/static/53a4e3dff0e918cc1de8f39c5b99adac/48efe/types-of-savings-accounts.jpg"
+        },
+        {
+            "title": "Introduction to Piggy Banks and Savings Jars",
+            "credits": "+1 Point",
+            "description": "Learn about traditional methods of saving money.",
+            "track": "Saving and Investing",
+            "prerequisite": null,
+            "details": "Introduction to Piggy Banks and Savings Jars explores traditional methods of saving money, such as using piggy banks and savings jars. Participants will discover the benefits of these age-old saving tools, including simplicity, visual reinforcement, and cultivating saving habits. By incorporating piggy banks and savings jars into their savings routines, participants can reinforce their commitment to saving and achieve their financial goals.",
+            "tableOfContents": {
+                "chapter1": {
+                    "title": "Piggy Banks: A Historical Perspective",
+                    "subsections": ["Origin and Evolution", "Cultural Significance", "Modern Adaptations"]
+                },
+                "chapter2": {
+                    "title": "Savings Jars: Practical Applications",
+                    "subsections": ["Budgeting Tools", "Goal Setting", "Behavioral Economics"]
+                },
+                "chapter3": {
+                    "title": "Maximizing Savings with Piggy Banks and Savings Jars",
+                    "subsections": ["Effective Usage Strategies", "Regular Contributions", "Teaching Children to Save"]
+                }
+            },
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXkRsakDgtI0IhBdgucp-ZgN87J4RoPryJ0hBDKgsoPw&s"
+        },
+        {
+            "title": "Setting Financial Goals",
+            "credits": "+1 Point",
+            "description": "Develop skills to set realistic financial objectives.",
+            "track": "Financial Responsibility",
+            "prerequisite": null,
+            "details": "Setting Financial Goals equips participants with the knowledge and techniques to establish achievable financial objectives aligned with their aspirations. Participants will learn to define SMART goals, prioritize objectives, and create action plans to pursue their financial dreams effectively.",
+            "tableOfContents": {
+                "chapter1": {
+                    "title": "Goal Setting Fundamentals",
+                    "subsections": ["SMART Criteria", "Short-Term vs. Long-Term Goals", "Goal Setting Strategies"]
+                },
+                "chapter2": {
+                    "title": "Personal Finance Goals",
+                    "subsections": ["Emergency Fund Establishment", "Debt Repayment Targets", "Savings and Investment Goals"]
+                },
+                "chapter3": {
+                    "title": "Monitoring and Adjusting Goals",
+                    "subsections": ["Progress Tracking", "Goal Evaluation", "Adaptation Strategies"]
+                }
+            },
+            "image": "https://si-interactive.s3.amazonaws.com/prod/plansponsor-com/wp-content/uploads/2021/12/14130822/PS-121321-Employees-Set-Financial-Goals-Not-Resolutions-Heading-Into-2022-1308820380-web.jpg"
+        },
+        {
+            "title": "Making Wise Spending Choices",
+            "credits": "+1 Point",
+            "description": "Learn how to make responsible spending decisions.",
+            "track": "Financial Responsibility",
+            "prerequisite": null,
+            "details": "Making Wise Spending Choices empowers participants to make prudent and responsible spending decisions that align with their financial goals and values. Participants will learn to distinguish between needs and wants, prioritize expenditures, and adopt mindful spending habits to optimize their financial well-being.",
+            "tableOfContents": {
+                "chapter1": {
+                    "title": "Understanding Consumer Behavior",
+                    "subsections": ["Factors Influencing Spending", "Psychological Triggers", "Behavioral Economics"]
+                },
+                "chapter2": {
+                    "title": "Budgeting for Value",
+                    "subsections": ["Value-Based Spending", "Cost-Benefit Analysis", "Price vs. Quality"]
+                },
+                "chapter3": {
+                    "title": "Resisting Impulse Buying",
+                    "subsections": ["Delaying Gratification", "Creating Shopping Lists", "Mindful Consumption Practices"]
+                }
+            },
+            "image": "https://www.incharge.org/wp-content/uploads/2015/06/How-To-Make-A-Budget.jpg"
+        },
+        {
+            "title": "Understanding Credit and Debt",
+            "credits": "+1 Point",
+            "description": "Discover the basics of credit and debt management.",
+            "track": "Financial Responsibility",
+            "prerequisite": null,
+            "details": "Understanding Credit and Debt introduces participants to fundamental concepts of credit and debt management to foster responsible financial behavior. Participants will learn about credit scores, borrowing options, and debt repayment strategies, empowering them to make informed decisions regarding credit usage and debt management.",
+            "tableOfContents": {
+                "chapter1": {
+                    "title": "Credit Basics",
+                    "subsections": ["Credit Score Components", "Credit Reporting Agencies", "Credit Score Interpretation"]
+                },
+                "chapter2": {
+                    "title": "Types of Debt",
+                    "subsections": ["Consumer Debt vs. Investment Debt", "Secured vs. Unsecured Loans", "Revolving vs. Installment Credit"]
+                },
+                "chapter3": {
+                    "title": "Debt Management Strategies",
+                    "subsections": ["Debt Repayment Plans", "Debt Consolidation", "Credit Counseling Services"]
+                }
+            },
+            "image": "https://framerusercontent.com/images/3GpQfwez8Ak81psbZgVpxQYwejI.jpg?scale-down-to=4096"
+        }
+    ],
+    "intermediateCourses": [
+        {
+          "title": "Advanced Budgeting Techniques",
+          "credits": "+5 Points",
+          "description": "Explore advanced strategies for budgeting and financial planning.",
+          "track": "Money Basics",
+          "prerequisite": "Introduction to Money Management",
+          "details": "Advanced Budgeting Techniques delves deeper into the intricacies of budgeting, providing participants with advanced tools and strategies to optimize their financial plans. Topics covered include advanced budgeting software, investment allocation within budgets, and tax-efficient budgeting strategies. By mastering these techniques, participants can maximize their financial efficiency and achieve their long-term financial goals.",
+          "tableOfContents": {
+            "chapter1": {
+              "title": "Advanced Budgeting Software",
+              "subsections": ["Excel Budgeting Templates", "Specialized Budgeting Apps", "Customized Financial Dashboards"]
+            },
+            "chapter2": {
+              "title": "Investment Allocation",
+              "subsections": ["Asset Allocation Strategies", "Risk Management Techniques", "Tax-Efficient Investments"]
+            },
+            "chapter3": {
+              "title": "Advanced Tax Planning",
+              "subsections": ["Tax Optimization Strategies", "Tax-Loss Harvesting", "Retirement Account Contributions"]
+            }
+          },
+          "image": "https://w7.pngwing.com/pngs/257/898/png-transparent-finance-financial-statement-budget-accounting-investment-business-company-text-people-thumbnail.png"
+        },
+        {
+          "title": "Earning and Managing Allowance",
+          "credits": "+5 Points",
+          "description": "Learn how to earn and manage personal allowance effectively.",
+          "track": "Money Basics",
+          "prerequisite": "Understanding Needs vs. Wants",
+          "details": "Earning and Managing Allowance teaches participants how to earn, save, and responsibly spend their personal allowance. Topics covered include strategies for increasing allowance earnings, setting savings goals, and making informed spending decisions. By mastering these skills, participants can develop lifelong habits of financial responsibility and independence.",
+          "tableOfContents": {
+            "chapter1": {
+              "title": "Maximizing Allowance Earnings",
+              "subsections": ["Extra Chores and Tasks", "Entrepreneurial Ventures", "Investing Allowance Funds"]
+            },
+            "chapter2": {
+              "title": "Saving and Budgeting Allowance",
+              "subsections": ["Allocating Allowance to Savings Goals", "Budgeting Allowance for Expenses", "Emergency Allowance Fund"]
+            },
+            "chapter3": {
+              "title": "Spending Wisely",
+              "subsections": ["Prioritizing Needs vs. Wants", "Comparing Purchase Options", "Resisting Impulse Buys"]
+            }
+          },
+          "image": "https://media.istockphoto.com/id/1316048334/vector/mother-teaching-her-children-saving-money-family-finance-concept-vector-illustration-flat.jpg?s=612x612&w=0&k=20&c=E6aQuqgS14HO-NXo7069EOSDuEt64WHI53q-Vc5siTM="
+        },
+        {
+            "title": "Shopping Wisely: Needs vs. Wants",
+            "credits": "+5 Points",
+            "description": "Understand the importance of distinguishing between needs and wants when shopping.",
+            "track": "Smart Spending",
+            "prerequisite": "Understanding Money: Coins and Bills",
+            "details": "Shopping Wisely: Needs vs. Wants provides participants with essential insights into making informed purchasing decisions. Participants will learn to differentiate between essential needs and discretionary wants, enabling them to prioritize spending effectively. The course covers various techniques for evaluating purchase choices and avoiding impulsive buying behavior.",
+            "tableOfContents": {
+              "chapter1": {
+                "title": "Understanding Needs and Wants",
+                "subsections": ["Defining Needs vs. Wants", "Identifying Essential Expenses", "Recognizing Discretionary Spending"]
+              },
+              "chapter2": {
+                "title": "Making Informed Decisions",
+                "subsections": ["Researching Purchase Options", "Comparing Features and Prices", "Assessing Long-Term Value"]
+              },
+              "chapter3": {
+                "title": "Resisting Impulse Buys",
+                "subsections": ["Setting Purchase Criteria", "Implementing Cooling-Off Periods", "Utilizing Shopping Lists"]
+              }
+            },
+            "image": "https://t4.ftcdn.net/jpg/06/67/03/39/360_F_667033979_oUgz5rO73lr1hMA9V1BRxquINof6vMOe.jpg"
+        },
+        {
+            "title": "Budgeting for Shopping Trips",
+            "credits": "+5 Points",
+            "description": "Learn how to create and stick to a budget when going shopping.",
+            "track": "Smart Spending",
+            "prerequisite": "Making Smart Purchases",
+            "details": "Budgeting for Shopping Trips equips participants with practical budgeting techniques specifically tailored for shopping outings. Participants will learn to set spending limits, prioritize purchases, and track expenses effectively. The course covers strategies for avoiding overspending and maximizing the value of each shopping trip.",
+            "tableOfContents": {
+              "chapter1": {
+                "title": "Setting Shopping Budgets",
+                "subsections": ["Determining Available Funds", "Allocating Budget Categories", "Setting Spending Limits"]
+              },
+              "chapter2": {
+                "title": "Planning Purchases",
+                "subsections": ["Identifying Priority Items", "Researching Product Prices", "Creating Shopping Lists"]
+              },
+              "chapter3": {
+                "title": "Sticking to the Budget",
+                "subsections": ["Resisting Temptations", "Utilizing Cash vs. Cards", "Reviewing Purchases Afterward"]
+              }
+            },
+            "image": "https://thumbs.dreamstime.com/b/shopping-cart-foods-receipt-grocery-expenses-budget-inflation-consumerism-concept-d-illustration-263167424.jpg"
+        },
+        {
+            "title": "Managing Your Bank Account",
+            "credits": "+5 Points",
+            "description": "Gain advanced skills in managing personal bank accounts effectively.",
+            "track": "Banking Basics",
+            "prerequisite": "Opening a Bank Account",
+            "details": "Managing Your Bank Account provides participants with advanced techniques for effectively managing personal bank accounts. Participants will learn to optimize account features, monitor transactions, and reconcile balances. The course covers strategies for minimizing fees, maximizing interest earnings, and safeguarding account security.",
+            "tableOfContents": {
+              "chapter1": {
+                "title": "Optimizing Account Features",
+                "subsections": ["Exploring Account Options", "Enabling Alerts and Notifications", "Setting Up Direct Deposits"]
+              },
+              "chapter2": {
+                "title": "Monitoring Transactions",
+                "subsections": ["Reviewing Account Statements", "Tracking Debit Card Usage", "Detecting Unauthorized Activity"]
+              },
+              "chapter3": {
+                "title": "Reconciling Balances",
+                "subsections": ["Balancing Checkbooks", "Verifying Electronic Transactions", "Resolving Discrepancies"]
+              }
+            },
+            "image": "https://us.123rf.com/450wm/macrovector/macrovector2108/macrovector210801914/173826447-money-can-flat-composition.jpg?ver=6"
+        },
+        {
+            "title": "Using Online Banking Safely",
+            "credits": "+5 Points",
+            "description": "Discover safe practices for managing bank accounts online.",
+            "track": "Banking Basics",
+            "prerequisite": "Understanding ATM and Debit Cards",
+            "details": "Using Online Banking Safely educates participants on essential security measures and best practices for managing bank accounts online. Participants will learn to safeguard personal information, detect phishing attempts, and secure online transactions. The course covers strategies for choosing strong passwords, enabling multi-factor authentication, and recognizing fraudulent activity.",
+            "tableOfContents": {
+              "chapter1": {
+                "title": "Protecting Personal Information",
+                "subsections": ["Secure Password Practices", "Safe Storage of Login Credentials", "Avoiding Public Wi-Fi Risks"]
+              },
+              "chapter2": {
+                "title": "Recognizing Phishing Attempts",
+                "subsections": ["Identifying Suspicious Emails", "Verifying Sender Identities", "Avoiding Clicking on Unknown Links"]
+              },
+              "chapter3": {
+                "title": "Securing Online Transactions",
+                "subsections": ["Enabling Multi-Factor Authentication", "Using Secure Payment Gateways", "Regularly Monitoring Account Activity"]
+              }
+            },
+            "image": "https://media.istockphoto.com/id/1331899633/vector/businessman-out-from-a-computer-with-a-shield.jpg?s=612x612&w=0&k=20&c=YR32hebPgVqfcwwDrYy9n2v5D7TjIzNNVMsn86k-u3s="
+        },
+        {
+            "title": "Understanding Interest and Compound Interest",
+            "credits": "+5 Points",
+            "description": "Explore the concepts of interest and compound interest and their impact on savings.",
+            "track": "Saving and Investing",
+            "prerequisite": "Types of Savings Accounts",
+            "details": "Understanding Interest and Compound Interest delves into the fundamental concepts of interest and compound interest, elucidating their significance in financial planning and savings growth. Participants will gain insights into how interest accrual impacts savings over time and the power of compounding in long-term wealth accumulation. The course covers practical examples and scenarios to illustrate the effects of different interest rates and compounding periods on savings.",
+            "tableOfContents": {
+              "chapter1": {
+                "title": "Understanding Simple Interest",
+                "subsections": ["Calculating Simple Interest", "Determining Interest Earned", "Exploring Interest Formulas"]
+              },
+              "chapter2": {
+                "title": "Exploring Compound Interest",
+                "subsections": ["Understanding Compound Interest Formula", "Calculating Future Values", "Analyzing Compound Interest Scenarios"]
+              },
+              "chapter3": {
+                "title": "Comparing Interest Rates",
+                "subsections": ["Evaluating Annual Percentage Yield", "Assessing Interest Rate Factors", "Understanding Effective Annual Rates"]
+              }
+            },
+            "image": "https://tpfcu.com/wp-content/uploads/2017/05/long-term-investment-Investors-keep-their-savings-on-time.jpg"
+        },
+        {
+            "title": "Introduction to Stocks and Bonds",
+            "credits": "+5 Points",
+            "description": "Learn about stocks and bonds as investment options.",
+            "track": "Saving and Investing",
+            "prerequisite": "Introduction to Piggy Banks and Savings Jars",
+            "details": "Introduction to Stocks and Bonds provides participants with foundational knowledge of stocks and bonds as investment instruments. Participants will explore the characteristics, benefits, and risks associated with investing in stocks and bonds. The course covers key terminology, valuation methods, and strategies for building a diversified investment portfolio.",
+            "tableOfContents": {
+              "chapter1": {
+                "title": "Understanding Stocks",
+                "subsections": ["Types of Stocks", "Stock Market Basics", "Factors Influencing Stock Prices"]
+              },
+              "chapter2": {
+                "title": "Exploring Bonds",
+                "subsections": ["Types of Bonds", "Bond Valuation Principles", "Interest Rate Risk and Bond Prices"]
+              },
+              "chapter3": {
+                "title": "Building an Investment Portfolio",
+                "subsections": ["Diversification Strategies", "Asset Allocation Techniques", "Risk Management Approaches"]
+              }
+            },
+            "image": "https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2023/03/Stocks_vs_Bonds.jpg"
+        },
+        {
+            "title": "Budgeting for Teens",
+            "credits": "+5 Points",
+            "description": "Learn advanced budgeting techniques tailored for teenagers.",
+            "track": "Financial Responsibility",
+            "prerequisite": "Setting Financial Goals",
+            "details": "Budgeting for Teens offers specialized budgeting techniques designed to empower teenagers with financial management skills. Participants will learn to create and maintain budgets that align with their unique income, expenses, and financial goals. The course addresses common challenges faced by teens, such as managing allowances, handling part-time income, and planning for future expenses.",
+            "tableOfContents": {
+              "chapter1": {
+                "title": "Understanding Teen Finances",
+                "subsections": ["Sources of Teen Income", "Typical Teen Expenses", "Budgeting Challenges for Teens"]
+              },
+              "chapter2": {
+                "title": "Creating a Teen Budget",
+                "subsections": ["Identifying Financial Goals", "Tracking Income and Expenses", "Allocating Funds Wisely"]
+              },
+              "chapter3": {
+                "title": "Managing Teen Allowance",
+                "subsections": ["Earning and Receiving Allowance", "Budgeting Allowance Funds", "Savings Goals for Teens"]
+              }
+            },
+            "image": "https://assets-global.website-files.com/6410766c6141dc6c15cfe33c/651b00b2cbd222e34320562b_illo_blog_072722.png"
+        },
+        {
+            "title": "Building and Maintaining Good Credit",
+            "credits": "+5 Points",
+            "description": "Discover strategies for building and maintaining a positive credit history.",
+            "track": "Financial Responsibility",
+            "prerequisite": "Understanding Credit and Debt",
+            "details": "Building and Maintaining Good Credit equips participants with essential strategies for establishing and preserving a strong credit profile. Participants will learn the factors influencing credit scores, responsible credit card usage, and techniques for improving creditworthiness. The course provides practical guidance on managing credit responsibly and avoiding common pitfalls that can negatively impact credit standing.",
+            "tableOfContents": {
+              "chapter1": {
+                "title": "Understanding Credit Scores",
+                "subsections": ["Components of Credit Scores", "Factors Influencing Credit Ratings", "Monitoring Credit Reports"]
+              },
+              "chapter2": {
+                "title": "Responsible Credit Card Usage",
+                "subsections": ["Choosing Suitable Credit Cards", "Managing Credit Limits", "Paying Bills on Time"]
+              },
+              "chapter3": {
+                "title": "Improving Creditworthiness",
+                "subsections": ["Reducing Debt Levels", "Establishing Positive Payment History", "Disputing Errors on Credit Reports"]
+              }
+            },
+            "image": "https://media.istockphoto.com/id/1281808435/vector/woman-choosing-between-bank-and-piggybank.jpg?s=612x612&w=0&k=20&c=zPxjycC1AOMSdeAAID7YTAQZ3hFp7TLEPFFaKuroOLc="
+        }
+    ],
+    "advancedCourses": [
+            {
+            "title": "Investing for Teens",
+            "credits": "+10 Points",
+            "description": "Master the fundamentals of investing and building wealth as a teenager.",
+            "track": "Money Basics",
+            "prerequisite": ["Budgeting Basics"],
+            "details": "Investing for teens is an essential skill that can set the foundation for long-term financial success. By learning how to invest wisely during your teenage years, you can take advantage of the power of compounding and grow your wealth exponentially over time. To excel in investing, teens should focus on understanding the basic concepts of stocks, bonds, mutual funds, and other investment vehicles. Additionally, learning about risk management, diversification, and setting realistic financial goals are crucial aspects of successful investing. By starting early and staying disciplined, teens can build a solid financial future through smart investing.",
+            "tableOfContents": {
+                "chapter1": {
+                "title": "Introduction to Investing",
+                "subsections": [
+                    "Understanding Investment Basics",
+                    "Types of Investments",
+                    "Benefits of Investing"
+                ]
+                },
+                "chapter2": {
+                "title": "Risk Management",
+                "subsections": [
+                    "Assessing Risk Tolerance",
+                    "Diversification Strategies",
+                    "Understanding Market Volatility"
+                ]
+                },
+                "chapter3": {
+                "title": "Building an Investment Portfolio",
+                "subsections": [
+                    "Setting Investment Goals",
+                    "Asset Allocation Strategies",
+                    "Monitoring and Rebalancing"
+                ]
+                }
+            },
+            "image": "https://www.usatoday.com/money/blueprint/images/uploads/2023/06/05072149/best-investment-accounts-for-kids-scaled-e1685949746352.jpg"
+            },
+            {
+            "title": "Avoiding Impulse Buying",
+            "credits": "+10 Points",
+            "description": "Develop strategies to resist impulse buying and make mindful purchasing decisions.",
+            "track": "Smart Spending",
+            "prerequisite": ["Shopping Wisely: Needs vs. Wants"],
+            "details": "Avoiding impulse buying is crucial for maintaining financial discipline and achieving your savings goals. To overcome the temptation of impulse purchases, individuals should first identify their triggers and understand the emotional drivers behind their spending habits. Implementing strategies such as creating a budget, making shopping lists, and setting spending limits can help curb impulsive buying behavior. Additionally, practicing mindfulness and delaying gratification can empower individuals to make more rational purchasing decisions. By prioritizing needs over wants and staying focused on long-term financial objectives, individuals can avoid impulse buying and achieve greater financial stability.",
+            "tableOfContents": {
+                "chapter1": {
+                "title": "Understanding Impulse Buying",
+                "subsections": [
+                    "Identifying Triggers",
+                    "Understanding Emotional Spending",
+                    "Recognizing Impulse Purchase Patterns"
+                ]
+                },
+                "chapter2": {
+                "title": "Strategies for Avoidance",
+                "subsections": [
+                    "Creating a Budget",
+                    "Making Shopping Lists",
+                    "Setting Spending Limits"
+                ]
+                },
+                "chapter3": {
+                "title": "Practicing Mindfulness",
+                "subsections": [
+                    "Delayed Gratification Techniques",
+                    "Staying Focused on Financial Goals",
+                    "Avoiding Impulse Traps"
+                ]
+                }
+            },
+            "image": "https://media.licdn.com/dms/image/D5612AQGdEQsZ6jAK2Q/article-cover_image-shrink_720_1280/0/1681449591550?e=2147483647&v=beta&t=nELcNARFEurhVwmtwo9sMTqF5V-fWBRBV-8VL3Pr_cQ"
+            },
+            {
+            "title": "Credit Cards and Responsible Borrowing",
+            "credits": "+10 Points",
+            "description": "Learn about responsible credit card usage and borrowing practices.",
+            "track": "Banking Basics",
+            "prerequisite": ["Managing Your Bank Account"],
+            "details": "Understanding how to use credit cards responsibly is essential for maintaining good financial health. By learning about interest rates, credit limits, and payment schedules, individuals can avoid falling into debt traps and damaging their credit scores. Responsible borrowing involves only charging what you can afford to pay off in full each month and avoiding carrying balances from month to month. Additionally, individuals should monitor their credit card statements regularly for fraudulent activity and report any unauthorized charges immediately. By using credit cards wisely and responsibly, individuals can build a positive credit history and access financial opportunities in the future.",
+            "tableOfContents": {
+                "chapter1": {
+                "title": "Credit Card Basics",
+                "subsections": [
+                    "Understanding Interest Rates",
+                    "Credit Limits and Utilization",
+                    "Payment Schedules"
+                ]
+                },
+                "chapter2": {
+                "title": "Responsible Borrowing Practices",
+                "subsections": [
+                    "Paying Off Balances in Full",
+                    "Avoiding Minimum Payments",
+                    "Monitoring Credit Card Statements"
+                ]
+                },
+                "chapter3": {
+                "title": "Building Credit Responsibly",
+                "subsections": [
+                    "Establishing a Good Payment History",
+                    "Maintaining Low Credit Card Balances",
+                    "Avoiding Credit Card Misuse"
+                ]
+                }
+            },
+            "image": "https://media.istockphoto.com/id/1295969281/vector/credit-card-debt-overspending-problem-financial-failure-or-too-much-cost-and-expense-concept.jpg?s=612x612&w=0&k=20&c=SEkhUwhLTqSH53Lc5OGxL_RCNhaVcvhNEDuRgbdf5FM="
+            },
+            {
+            "title": "Creating a Diversified Investment Portfolio",
+            "credits": "+10 Points",
+            "description": "Develop skills to create a diversified investment portfolio for long-term financial growth.",
+            "track": "Saving and Investing",
+            "prerequisite": ["Understanding Interest and Compound Interest"],
+            "details": "Creating a diversified investment portfolio is essential for managing risk and maximizing returns over the long term. By spreading investments across different asset classes, sectors, and geographical regions, individuals can reduce the impact of market volatility and achieve more consistent growth. To build a diversified portfolio, investors should first assess their risk tolerance, investment goals, and time horizon. They should then allocate their assets strategically based on these factors, ensuring a balanced mix of stocks, bonds, real estate, and other investment vehicles. Regularly reviewing and rebalancing the portfolio is also important to maintain diversification and adapt to changing market conditions.",
+            "tableOfContents": {
+                "chapter1": {
+                "title": "Introduction to Portfolio Diversification",
+                "subsections": [
+                    "Understanding Risk and Return",
+                    "Benefits of Diversification",
+                    "Asset Allocation Strategies"
+                ]
+                },
+                "chapter2": {
+                "title": "Building a Balanced Portfolio",
+                "subsections": [
+                    "Determining Risk Tolerance",
+                    "Asset Allocation Models",
+                    "Rebalancing Techniques"
+                ]
+                },
+                "chapter3": {
+                "title": "Monitoring and Adjusting",
+                "subsections": [
+                    "Regular Portfolio Reviews",
+                    "Adapting to Market Changes",
+                    "Seeking Professional Advice"
+                ]
+                }
+            },
+            "image": "https://media.istockphoto.com/id/1287845196/vector/investment-asset-allocation-and-rebalance-concept-businessman-investor-or-financial-planner.jpg?s=612x612&w=0&k=20&c=5YupYSd-Fe52sPuBuZqO1Uit6N59Igon-VWvikDCP3w="
+            },
+            {
+            "title": "Financial Planning for Life Events",
+            "credits": "+10 Points",
+            "description": "Learn how to plan and manage finances for significant life events.",
+            "track": "Financial Responsibility",
+            "prerequisite": ["Budgeting for Teens"],
+            "details": "Financial planning for life events is essential for ensuring financial security and stability during major transitions. Whether it's buying a home, getting married, or preparing for retirement, individuals should have a clear plan in place to manage their finances effectively. By setting specific goals, creating budgets, and saving diligently, individuals can prepare for life events and minimize financial stress. Additionally, understanding the financial implications of major life decisions and seeking professional advice when needed can help individuals make informed choices and achieve their long-term objectives.",
+            "tableOfContents":{
+                "chapter1": {
+                    "title": "Setting Financial Goals",
+                    "subsections": [
+                        "Defining Short-Term and Long-Term Goals",
+                        "Prioritizing Financial Objectives",
+                        "Creating a Savings Plan"
+                    ]
+                },
+                "chapter2": {
+                    "title": "Budgeting for Life Events",
+                    "subsections": [
+                        "Estimating Costs and Expenses",
+                        "Adjusting Budgets for Special Occasions",
+                        "Building Emergency Funds"
+                    ]
+                },
+                "chapter3": {
+                    "title": "Managing Financial Transitions",
+                    "subsections": [
+                        "Preparing for Major Life Changes",
+                        "Adapting Financial Plans as Needed",
+                        "Seeking Professional Guidance"
+                    ]
+                }
+            },
+            "image": "https://unionmf.com/ResourcePackages/unionmf/assets/dist/images/calc-retirement.png"
+        }
+    ]
+}

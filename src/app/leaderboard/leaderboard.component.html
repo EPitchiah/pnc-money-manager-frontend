@@ -1,0 +1,92 @@
+<body>
+   <div class="leaderboard-container">
+        <div class="leaderboard-header" style="justify-content: center; text-align: center;">
+            <h1 style="color: white; font-weight: bold; letter-spacing: 4px; text-shadow: -4px -4px 0 #000, 4px -4px 0 #000, -4px  4px 0 #000, 4px  4px 0 #000;">Leaderboard</h1>
+        </div>
+        <div class="leaderboard-content">
+        <div class="left-half">
+            <h2 *ngIf="username === 'parent'">Check out how your child is doing!</h2>
+            <h2 *ngIf="username === 'child'">Check out how you rank against others!</h2>
+            <!-- City Dropdown -->
+            <div class="grid-container">
+                <div class="form-group">
+                <label for="stateDropdown">State:</label>
+                <select id="stateDropdown" class="form-control" [(ngModel)]="selectedState" (ngModelChange)="updateFilteredLeaderboard()">
+                    <option value="">Select State</option>
+                    <option *ngFor="let state of states" [value]="state">{{ state }}</option>
+                </select>
+                </div>
+
+                <div class="form-group" *ngIf="selectedState">
+                    <label for="cityDropdown">City:</label>
+                    <select id="cityDropdown" class="form-control" [(ngModel)]="selectedCity" (ngModelChange)="updateFilteredLeaderboard()">
+                      <option value="">Select City</option>
+                      <option *ngFor="let city of getFilteredCities()" [value]="city">{{ city }}</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="ageDropdown">Age:</label>
+                    <select id="ageDropdown" class="form-control" [(ngModel)]="selectedAge" (ngModelChange)="updateFilteredLeaderboard()">
+                    <option value="">Select Age Range</option>
+                    <option *ngFor="let age of ages" [value]="age">{{ age }}</option>
+                    </select>
+                </div>
+      
+                <div class="form-group">
+                    <label for="durationDropdown">Program:</label>
+                    <select id="durationDropdown" class="form-control" [(ngModel)]="selectedDuration" (ngModelChange)="updateFilteredLeaderboard()">
+                    <option value="">Select Time Range</option>
+                    <option *ngFor="let duration of durations" [value]="duration">{{ duration }}</option>
+                    </select>
+                </div>
+            </div>
+              
+            <div class="table-container">
+  
+            <!-- Table for leaderboard data -->
+            <table class="leaderboard-table">
+                <thead>
+                <tr>
+                    <th>Position</th>
+                    <th (click)="sortByName()">
+                    Name
+                    <span class="sort-indicator" [class.asc]="sortOrder === 'asc' && sortedBy === 'name'" [class.desc]="sortOrder === 'desc' && sortedBy === 'name'"></span>
+                    </th>
+                    <th (click)="sortByScore()">
+                    Score
+                    <span class="sort-indicator" [class.desc]="sortOrder === 'desc' && sortedBy === 'score'" [class.asc]="sortOrder === 'asc' && sortedBy === 'score'"></span>
+                    </th>
+                    <th *ngIf="anonymous">Age</th>
+                    <th *ngIf="anonymous" (click)="sortByDuration()">
+                        Duration
+                        <span class="sort-indicator" [class.desc]="sortOrder === 'desc' && sortedBy === 'duration'" [class.asc]="sortOrder === 'asc' && sortedBy === 'duration'"></span>
+                        </th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Populate data from leaderboard.json -->
+                <tr *ngFor="let entry of filteredLeaderboard; let i = index">
+                    <td>{{ i + 1 }}</td>
+                    <td>{{ entry.name }}</td>
+                    <td>{{ entry.score }}</td>
+                    <td *ngIf="anonymous">{{ entry.age }}</td>
+                    <td *ngIf="anonymous">{{ entry.duration }}</td>
+                  </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+        <div class="right-half">
+            <h2>User Score Trend</h2> <!-- Assuming this is the "User Score" text -->
+            <div class="image-button-container">
+                <img src="assets/graph-image.png" alt="Graph" class="graph-image">
+                <!-- Button to route to courses page -->
+                <button class="styling" (click)="navigateToCourses()">View Checkpoints</button>
+            </div>
+        </div>
+        </div>
+
+        <button class="styling" style="margin: 10px; background-color: #FF5400;" (click)="navigateToAccounts()">Back to Accounts</button>
+    </div>
+ </body>   

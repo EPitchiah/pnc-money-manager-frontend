@@ -1,0 +1,77 @@
+<body>
+    <div class="setting-container">
+        <button mat-raised-button class="apply-btn" style="text-align: center; background-color: #ff5400; color: #f5f5f5; font-weight: bold;" (click)="applyControls()">APPLY</button>
+        <h2 style="text-align: center; background-color: #ff5400; color: #f5f5f5; font-weight: bold;">Child Account Permissions</h2>
+        <div class="permission-list">
+            <div class="setting-row">
+                <div class="setting-title">Allow Child Account Use</div>
+                <div class="setting-toggle">
+                    <mat-checkbox class="toggle-solo" [(ngModel)]="allowUse"></mat-checkbox>
+                </div>
+            </div>
+            <div class="setting-row">
+                <div class="setting-title">Allow Monthly Withdrawals</div>
+                <div class="setting-toggle">
+                    <mat-checkbox class="toggle" [(ngModel)]="allowMonthly" [disabled]="!allowUse"></mat-checkbox>
+                </div>
+                <div class="setting-amount">
+                    <mat-form-field>
+                        <span matTextPrefix>$</span>
+                        <input matInput type="number" placeholder="Amount" [(ngModel)]="monthlyWithdrawalAmount" [disabled]="!allowUse || !allowMonthly">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="setting-row">
+                <div class="setting-title">Enable Overdraft Protection</div>
+                <div class="setting-toggle">
+                    <mat-checkbox class="toggle" [(ngModel)]="enableOverdraft" [disabled]="!allowUse"></mat-checkbox>
+                </div>
+                <div class="setting-amount">
+                    <mat-form-field>
+                        <span matTextPrefix>$</span>
+                        <input matInput type="number" placeholder="Amount" [(ngModel)]="overdraftAmount" [disabled]="!allowUse || !enableOverdraft">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="setting-row">
+                <div class="setting-title">Enable Public Profile</div>
+                <div class="setting-toggle">
+                    <mat-checkbox class="toggle-solo" [(ngModel)]="anonymous" [disabled]="!allowUse"></mat-checkbox>
+                </div>
+            </div>
+            <div class="setting-row">
+                <div class="setting-title">Allow Money Transfer</div>
+                <div class="setting-toggle">
+                    <mat-checkbox class="toggle" [(ngModel)]="allowTransfer" [disabled]="!allowUse"></mat-checkbox>
+                </div>
+                <div class="setting-amount">
+                    <mat-form-field>
+                        <span matTextPrefix>$</span>
+                        <input matInput type="number" placeholder="Amount" [(ngModel)]="transferAmount" [disabled]="!allowUse || !allowTransfer">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="setting-row">
+                <div class="setting-title">Manage Budget</div>
+                <div class="setting-toggle">
+                    <mat-checkbox class="toggle" [(ngModel)]="manageBudget" [disabled]="!allowUse"></mat-checkbox>
+                </div>
+                <div class="setting-amount">
+                    <mat-form-field>
+                        <span matTextPrefix>$</span>
+                        <input matInput type="number" placeholder="Amount" [(ngModel)]="budgetAmount" [disabled]="!allowUse || !manageBudget">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="setting-row">
+                <div class="setting-title">Parent Matching Percentage</div>
+                <div class="setting-amount">
+                    <mat-form-field>
+                        <span matTextSuffix>%</span>
+                        <input matInput type="number" placeholder="0" [(ngModel)]="matchingPercentage" [disabled]="!allowUse">
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

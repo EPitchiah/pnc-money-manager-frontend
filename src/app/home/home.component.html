@@ -1,0 +1,171 @@
+<body>
+    <div class="home-container">
+        <h2>Accounts</h2>
+    
+        <div class="account-section">
+        <h3>Spending</h3>
+        <p>Account Number: XXXX {{parent.spendingAccount.accountNumber}}</p>
+        <p>Balance: ${{parent.spendingAccount.availableBalance.toFixed(2)}}</p>
+        <button (click)="viewDetails('Spending')">View More Details</button>
+        </div>
+    
+        <div class="grid-container">
+            <div class="account-section left">
+              <h3>Reserve</h3>
+              <p>Account Number: XXXX {{parent.reserveAccount.accountNumber}}</p>
+              <p>Balance: ${{parent.reserveAccount.availableBalance.toFixed(2)}}</p>
+              <button (click)="viewDetails('Reserve')">View More Details</button>
+            </div>
+          
+            <div class="account-section right">
+              <h3>Growth</h3>
+              <p>Account Number: XXXX {{parent.growthAccount.accountNumber}}</p>
+              <p>Balance: ${{ parent.growthAccount.availableBalance.toFixed(2)}}</p>
+              <button (click)="viewDetails('Growth')">View More Details</button>
+            </div>
+          </div>
+          
+    
+        <h2>Money Managers</h2>
+
+        <div class="money-managers-section">
+          <div class="grid-container">
+              <div class="checking">
+                <h3>Checking</h3>
+                <p>Account Number: XXXX {{ account.spendingAccount.accountNumber }}</p>
+                <p>Balance: ${{account.spendingAccount.availableBalance.toFixed(2)}}</p>
+              </div>
+
+              <div class="savings">
+                <h3>Savings</h3>
+                <p>Account Number: XXXX {{ account.savingsAccount.accountNumber }}</p>
+                <p>Balance: ${{account.savingsAccount.availableBalance.toFixed(2)}}</p>
+            </div>
+          </div>
+          <button style="margin-top: 5px;" (click)="viewDetails('MoneyManagers')">View More Details</button>
+        </div>
+    
+        <h2>Credit Cards</h2>
+    
+        <div class="credit-cards-section">
+        <h3>Credit Card</h3>
+        <p>Account Number: XXXX {{parent.creditAccount.accountNumber}}</p>
+        <p>Balance: ${{parent.creditAccount.availableBalance.toFixed(2)}}</p>
+        <button (click)="viewDetails('Credit Card')">View More Details</button>
+        </div>
+    </div>
+    <div *ngIf="toggleTransaction" class="shade">
+      <div *ngIf="type === 'Spending'" class="popup" style="width: 80%; max-height: 80vh;">
+        <h3>Transactions for Spending Account: {{ parent.spendingAccount.accountNumber }}</h3>
+        <div class="table-container">
+          <table>
+          <!-- Table header -->
+          <thead>
+            <tr>
+              <th style="text-align: left;">Transaction ID</th>
+              <th style="text-align: left;">Amount</th>
+              <th style="text-align: left;">Posted Date</th>
+              <th style="text-align: left;">Name</th>
+              <th style="text-align: left;">Status</th>
+            </tr>
+          </thead>
+          <!-- Table body -->
+          <tbody>
+            <tr *ngFor="let transaction of parent.spendingAccount.transactions">
+              <td>{{ transaction.transaction_id }}</td>
+              <td>{{ transaction.transaction_amount.toFixed(2) }}</td>
+              <td>{{ transaction.posted_date }}</td>
+              <td>{{ transaction.transaction_name }}</td>
+              <td>{{ transaction.status }}</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      <button class="btn btn-primary" style="margin-left: 1%; margin-top: 1%;" (click)="toggleTransaction = !toggleTransaction">Close</button>
+      </div>
+      <div *ngIf="type === 'Reserve'" class="popup" style="width: 80%; max-height: 80vh;">
+        <h3>Transactions for Reserve Account: {{ parent.reserveAccount.accountNumber }}</h3>
+        <div class="table-container">
+          <table>
+          <!-- Table header -->
+          <thead>
+            <tr>
+              <th style="text-align: left;">Transaction ID</th>
+              <th style="text-align: left;">Amount</th>
+              <th style="text-align: left;">Posted Date</th>
+              <th style="text-align: left;">Name</th>
+              <th style="text-align: left;">Status</th>
+            </tr>
+          </thead>
+          <!-- Table body -->
+          <tbody>
+            <tr *ngFor="let transaction of parent.reserveAccount.transactions">
+              <td>{{ transaction.transaction_id }}</td>
+              <td>{{ transaction.transaction_amount.toFixed(2) }}</td>
+              <td>{{ transaction.posted_date }}</td>
+              <td>{{ transaction.transaction_name }}</td>
+              <td>{{ transaction.status }}</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      <button class="btn btn-primary" style="margin-left: 1%; margin-top: 1%;" (click)="toggleTransaction = !toggleTransaction">Close</button>
+      </div>
+      <div *ngIf="type === 'Growth'" class="popup" style="width: 80%; max-height: 80vh;">
+        <h3>Transactions for Growth Account: {{ parent.growthAccount.accountNumber }}</h3>
+        <div class="table-container">
+          <table>
+          <!-- Table header -->
+          <thead>
+            <tr>
+              <th style="text-align: left;">Transaction ID</th>
+              <th style="text-align: left;">Amount</th>
+              <th style="text-align: left;">Posted Date</th>
+              <th style="text-align: left;">Name</th>
+              <th style="text-align: left;">Status</th>
+            </tr>
+          </thead>
+          <!-- Table body -->
+          <tbody>
+            <tr *ngFor="let transaction of parent.growthAccount.transactions">
+              <td>{{ transaction.transaction_id }}</td>
+              <td>{{ transaction.transaction_amount.toFixed(2) }}</td>
+              <td>{{ transaction.posted_date }}</td>
+              <td>{{ transaction.transaction_name }}</td>
+              <td>{{ transaction.status }}</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      <button class="btn btn-primary" style="margin-left: 1%; margin-top: 1%;" (click)="toggleTransaction = !toggleTransaction">Close</button>
+      </div>
+      <div *ngIf="type === 'Credit Card'" class="popup" style="width: 80%; max-height: 80vh;">
+        <h3>Transactions for Credit Card: {{ parent.creditAccount.accountNumber }}</h3>
+        <div class="table-container">
+          <table>
+          <!-- Table header -->
+          <thead>
+            <tr>
+              <th style="text-align: left;">Transaction ID</th>
+              <th style="text-align: left;">Amount</th>
+              <th style="text-align: left;">Posted Date</th>
+              <th style="text-align: left;">Name</th>
+              <th style="text-align: left;">Status</th>
+            </tr>
+          </thead>
+          <!-- Table body -->
+          <tbody>
+            <tr *ngFor="let transaction of parent.creditAccount.transactions">
+              <td>{{ transaction.transaction_id }}</td>
+              <td>{{ transaction.transaction_amount.toFixed(2) }}</td>
+              <td>{{ transaction.posted_date }}</td>
+              <td>{{ transaction.transaction_name }}</td>
+              <td>{{ transaction.status }}</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      <button class="btn btn-primary" style="margin-left: 1%; margin-top: 1%;" (click)="toggleTransaction = !toggleTransaction">Close</button>
+      </div>
+    </div>
+</body>  

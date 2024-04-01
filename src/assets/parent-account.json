@@ -1,0 +1,518 @@
+{
+    "spendingAccount": {
+        "accountNumber": "5847",
+        "availableBalance": 4567.89,
+        "transactions": [
+          {
+            "transaction_id": "15",
+            "transaction_amount": -2450.00,
+            "posted_date": "2024-03-28",
+            "transaction_name": "Credit Card Payment",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "14",
+            "transaction_amount": -3542.93,
+            "posted_date": "2024-03-21",
+            "transaction_name": "Direct Deposit",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "13",
+            "transaction_amount": -1000.00,
+            "posted_date": "2024-03-14",
+            "transaction_name": "Credit Card Payment",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "12",
+            "transaction_amount": -1640.00,
+            "posted_date": "2024-03-01",
+            "transaction_name": "Rent",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "11",
+            "transaction_amount": -2000.00,
+            "posted_date": "2024-02-29",
+            "transaction_name": "Credit Card Payment",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "10",
+            "transaction_amount": -3542.93,
+            "posted_date": "2024-02-15",
+            "transaction_name": "Direct Deposit",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "9",
+            "transaction_amount": -2000.00,
+            "posted_date": "2024-02-01",
+            "transaction_name": "Credit Card Payment",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "8",
+            "transaction_amount": -1000.00,
+            "posted_date": "2024-01-18",
+            "transaction_name": "Credit Card Payment",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "7",
+            "transaction_amount": -3542.93,
+            "posted_date": "2024-01-04",
+            "transaction_name": "Direct Deposit",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "6",
+            "transaction_amount": -3000.00,
+            "posted_date": "2023-12-21",
+            "transaction_name": "Credit Card Payment",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "5",
+            "transaction_amount": -3542.93,
+            "posted_date": "2023-12-07",
+            "transaction_name": "Direct Deposit",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "4",
+            "transaction_amount": -2000.00,
+            "posted_date": "2023-11-23",
+            "transaction_name": "Credit Card Payment",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "3",
+            "transaction_amount": -1640.00,
+            "posted_date": "2023-11-01",
+            "transaction_name": "Rent",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "2",
+            "transaction_amount": -2000.00,
+            "posted_date": "2023-10-18",
+            "transaction_name": "Credit Card Payment",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "1",
+            "transaction_amount": -3542.93,
+            "posted_date": "2023-10-04",
+            "transaction_name": "Direct Deposit",
+            "status": "posted"
+          }
+        ]
+      },    
+    "reserveAccount": {
+        "accountNumber": "1392",
+        "availableBalance": 1725.80,
+        "transactions": [
+          {
+            "transaction_id": "10",
+            "transaction_amount": -20.00,
+            "posted_date": "2024-03-27",
+            "transaction_name": "Overdraft Protection",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "9",
+            "transaction_amount": 10.00,
+            "posted_date": "2024-03-14",
+            "transaction_name": "Refill",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "8",
+            "transaction_amount": -15.80,
+            "posted_date": "2024-03-01",
+            "transaction_name": "Overdraft Protection",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "7",
+            "transaction_amount": -10.00,
+            "posted_date": "2024-02-15",
+            "transaction_name": "Overdraft Protection",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "6",
+            "transaction_amount": 15.00,
+            "posted_date": "2024-02-01",
+            "transaction_name": "Refill",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "5",
+            "transaction_amount": 10.00,
+            "posted_date": "2024-01-18",
+            "transaction_name": "Refill",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "4",
+            "transaction_amount": -15.00,
+            "posted_date": "2024-01-04",
+            "transaction_name": "Overdraft Protection",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "3",
+            "transaction_amount": 10.00,
+            "posted_date": "2023-12-21",
+            "transaction_name": "Refill",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "2",
+            "transaction_amount": 10.00,
+            "posted_date": "2023-12-07",
+            "transaction_name": "Refill",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "1",
+            "transaction_amount": -10.00,
+            "posted_date": "2023-11-23",
+            "transaction_name": "Overdraft Protection",
+            "status": "posted"
+          }
+        ]
+      },    
+    "growthAccount": {
+        "accountNumber": "7492",
+        "availableBalance": 51235.80,
+        "transactions": [
+        {
+            "transaction_id": "20",
+            "transaction_amount": 1500,
+            "posted_date": "2024-03-27",
+            "transaction_name": "Transfer from Spending",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "19",
+            "transaction_amount": 1500,
+            "posted_date": "2024-03-13",
+            "transaction_name": "Transfer from Spending",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "18",
+            "transaction_amount": 1500,
+            "posted_date": "2024-02-28",
+            "transaction_name": "Transfer from Spending",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "17",
+            "transaction_amount": 1500,
+            "posted_date": "2024-02-14",
+            "transaction_name": "Transfer from Spending",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "16",
+            "transaction_amount": 1500,
+            "posted_date": "2024-01-31",
+            "transaction_name": "Transfer from Spending",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "15",
+            "transaction_amount": 1500,
+            "posted_date": "2024-01-17",
+            "transaction_name": "Transfer from Spending",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "14",
+            "transaction_amount": 1500,
+            "posted_date": "2024-01-03",
+            "transaction_name": "Transfer from Spending",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "13",
+            "transaction_amount": 1500,
+            "posted_date": "2023-12-20",
+            "transaction_name": "Transfer from Spending",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "12",
+            "transaction_amount": 1500,
+            "posted_date": "2023-12-06",
+            "transaction_name": "Transfer from Spending",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "11",
+            "transaction_amount": 1500,
+            "posted_date": "2023-11-22",
+            "transaction_name": "Transfer from Spending",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "10",
+            "transaction_amount": 1500,
+            "posted_date": "2023-11-08",
+            "transaction_name": "Transfer from Spending",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "9",
+            "transaction_amount": 1500,
+            "posted_date": "2023-10-25",
+            "transaction_name": "Transfer from Spending",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "8",
+            "transaction_amount": 1500,
+            "posted_date": "2023-10-11",
+            "transaction_name": "Transfer from Spending",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "7",
+            "transaction_amount": 1500,
+            "posted_date": "2023-09-27",
+            "transaction_name": "Transfer from Spending",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "6",
+            "transaction_amount": 1500,
+            "posted_date": "2023-09-13",
+            "transaction_name": "Transfer from Spending",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "5",
+            "transaction_amount": 1500,
+            "posted_date": "2023-08-30",
+            "transaction_name": "Transfer from Spending",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "4",
+            "transaction_amount": 1500,
+            "posted_date": "2023-08-16",
+            "transaction_name": "Transfer from Spending",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "3",
+            "transaction_amount": 1500,
+            "posted_date": "2023-08-02",
+            "transaction_name": "Transfer from Spending",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "2",
+            "transaction_amount": 1500,
+            "posted_date": "2023-07-19",
+            "transaction_name": "Transfer from Spending",
+            "status": "posted"
+          },
+          {
+            "transaction_id": "1",
+            "transaction_amount": 1500,
+            "posted_date": "2023-07-05",
+            "transaction_name": "Transfer from Spending",
+            "status": "posted"
+          }
+        ]
+    },
+    "creditAccount": {
+        "accountNumber": "2485",
+        "availableBalance": 439.22,
+        "transactions": [
+        {
+            "transaction_id": "25",
+            "transaction_amount": 20.15,
+            "posted_date": "2024-03-27",
+            "transaction_name": "Grocery Store",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "24",
+            "transaction_amount": 35.50,
+            "posted_date": "2024-03-26",
+            "transaction_name": "Restaurant",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "23",
+            "transaction_amount": 10.75,
+            "posted_date": "2024-03-25",
+            "transaction_name": "Gas Station",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "22",
+            "transaction_amount": 12.30,
+            "posted_date": "2024-03-24",
+            "transaction_name": "Coffee Shop",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "21",
+            "transaction_amount": 25.45,
+            "posted_date": "2024-03-23",
+            "transaction_name": "Clothing Store",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "20",
+            "transaction_amount": 18.60,
+            "posted_date": "2024-03-22",
+            "transaction_name": "Bookstore",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "19",
+            "transaction_amount": 16.75,
+            "posted_date": "2024-03-21",
+            "transaction_name": "Fast Food",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "18",
+            "transaction_amount": 14.90,
+            "posted_date": "2024-03-20",
+            "transaction_name": "Convenience Store",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "17",
+            "transaction_amount": 30.20,
+            "posted_date": "2024-03-19",
+            "transaction_name": "Movie Theater",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "16",
+            "transaction_amount": 22.65,
+            "posted_date": "2024-03-18",
+            "transaction_name": "Pharmacy",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "15",
+            "transaction_amount": 28.40,
+            "posted_date": "2024-03-17",
+            "transaction_name": "Electronics Store",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "14",
+            "transaction_amount": 7.85,
+            "posted_date": "2024-03-16",
+            "transaction_name": "Coffee Shop",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "13",
+            "transaction_amount": 11.20,
+            "posted_date": "2024-03-15",
+            "transaction_name": "Grocery Store",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "12",
+            "transaction_amount": 9.95,
+            "posted_date": "2024-03-14",
+            "transaction_name": "Gas Station",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "11",
+            "transaction_amount": 36.75,
+            "posted_date": "2024-03-13",
+            "transaction_name": "Restaurant",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "10",
+            "transaction_amount": 19.80,
+            "posted_date": "2024-03-12",
+            "transaction_name": "Clothing Store",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "9",
+            "transaction_amount": 14.30,
+            "posted_date": "2024-03-11",
+            "transaction_name": "Bookstore",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "8",
+            "transaction_amount": 21.45,
+            "posted_date": "2024-03-10",
+            "transaction_name": "Fast Food",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "7",
+            "transaction_amount": 8.60,
+            "posted_date": "2024-03-09",
+            "transaction_name": "Convenience Store",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "6",
+            "transaction_amount": 32.15,
+            "posted_date": "2024-03-08",
+            "transaction_name": "Movie Theater",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "5",
+            "transaction_amount": 23.70,
+            "posted_date": "2024-03-07",
+            "transaction_name": "Pharmacy",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "4",
+            "transaction_amount": 27.85,
+            "posted_date": "2024-03-06",
+            "transaction_name": "Electronics Store",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "3",
+            "transaction_amount": 9.40,
+            "posted_date": "2024-03-05",
+            "transaction_name": "Coffee Shop",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "2",
+            "transaction_amount": 11.25,
+            "posted_date": "2024-03-04",
+            "transaction_name": "Grocery Store",
+            "status": "posted"
+        },
+        {
+            "transaction_id": "1",
+            "transaction_amount": 14.50,
+            "posted_date": "2024-03-03",
+            "transaction_name": "Gas Station",
+            "status": "posted"
+        }
+        ]
+    }
+      
+  }
+  

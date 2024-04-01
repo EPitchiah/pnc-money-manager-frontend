@@ -1,0 +1,217 @@
+<body>
+    <div class="settings-container">
+        <section class="section">
+            <h2>Profile Settings</h2>
+            <div class="settings-section">
+              <button (click)="toggleContact = !toggleContact">Update Contact Info</button>
+              <button (click)="toggleUserID = !toggleUserID; inputString = username">Change User ID</button>
+              <button (click)="togglePassword = !togglePassword">Change Password</button>
+            </div>
+            <div class="toggle-container">
+                <label for="remember-device">Remember Device</label>
+                <div class="toggle" (keyup.enter)="toggleRememberDevice()" tabindex="0">
+                  <input type="checkbox" id="remember-device" [(ngModel)]="rememberDevice" style="display: none;">
+                  <div class="toggle-handle" [class.active]="rememberDevice"></div>
+                </div>
+              </div>
+          </section>
+
+          <section class="section" *ngIf="username === 'parent'">
+            <h2>Parental Settings</h2>
+            <div class="settings-section">
+              <button (click)="toggleBudget = !toggleBudget">Manage Child Account Limit</button>
+              <button (click)="toggleNewAccount = !toggleNewAccount">Enable Overdraft Protection</button>
+              <button (click)="toggleOverdraft = !toggleOverdraft">Add Another Child Account</button>
+              <button (click)="toggleTransfer = !toggleTransfer">Manage Child Account Matching</button>
+              <button (click)="toggleAnonymous = !toggleAnonymous; inputBool = anonymous">Manage Child Account Matching</button>
+            </div>
+          </section>
+          
+          <section class="section">
+            <h2>Account Settings</h2>
+            <div class="settings-section">
+              <button (click)="toggleNotification = !toggleNotification">Notification Settings</button>
+              <button (click)="toggleLogin = !toggleLogin">Login History</button>
+            </div>
+          </section>
+
+          <div *ngIf="toggleContact" class="shade">
+            <div class="popup">
+                <h3>Insert Contact Information</h3>
+                <p>Current Info: {{ contactInfo }}</p>
+                <div class="form-group">
+                    <label for="input">New Contact Info</label>
+                    <input type="text" id="input" [(ngModel)]="inputString" class="form-control">
+                    <label for="contact_method">New Contact Method</label>
+                    <select id="contact_method" [(ngModel)]="contact_method" class="form-control">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="mail">Mail</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" [disabled]="!inputString" (click)="toggleContact = !toggleContact; updateContactInfo()">Submit</button>
+                <button class="btn btn-primary" (click)="toggleContact = !toggleContact; inputString = ''">Cancel</button>
+            </div>
+        </div>
+
+        <div *ngIf="toggleUserID" class="shade">
+          <div class="popup">
+              <h3>Insert User ID Information</h3>
+              <p>Current Info: {{ username }}</p>
+              <div class="form-group">
+                  <label for="input">New User ID</label>
+                  <select id="input" [(ngModel)]="inputString" class="form-control">
+                      <option [selected]="inputString === 'parent'"  value="parent">Parent</option>
+                      <option [selected]="inputString === 'child'" value="child">Child</option>
+                  </select>
+              </div>
+              <button class="btn btn-primary" [disabled]="!inputString" (click)="toggleUserID = !toggleUserID; username = inputString; changeUserID()">Submit</button>
+              <button class="btn btn-primary" (click)="toggleUserID = !toggleUserID; inputString = ''">Cancel</button>
+          </div>
+      </div>
+    <div *ngIf="togglePassword" class="shade">
+      <div class="popup">
+          <h3>Insert New Password</h3>
+          <div class="form-group">
+            <label for="input">New Password</label>
+            <input type="text" id="input" [(ngModel)]="inputString" class="form-control">
+            <label for="reinput">Re-enter Password</label>
+            <input type="text" id="reinput" [(ngModel)]="inputStringTwo" class="form-control">
+          </div>
+          <button class="btn btn-primary" (click)="togglePassword = !togglePassword; password = inputString; changePassword()">Submit</button>
+          <button class="btn btn-primary" (click)="togglePassword = !togglePassword; inputString = ''">Cancel</button>
+      </div>
+    </div>
+    <div *ngIf="toggleBudget" class="shade">
+        <div class="popup">
+            <h3>Manage Account Budget Limit</h3>
+            <div class="form-group">
+              <label for="input">Budget Limit</label>
+              <input type="number" id="input" [(ngModel)]="inputNumber" class="form-control">
+            </div>
+            <button class="btn btn-primary" (click)="toggleBudget = !toggleBudget; budgetAmount = inputNumber; manageChildAccountLimit()">Submit</button>
+            <button class="btn btn-primary" (click)="toggleBudget = !toggleBudget; inputNumber = 0">Cancel</button>
+        </div>
+      </div>
+      <div *ngIf="toggleNewAccount" class="shade">
+        <div class="popup">
+            <h3>Insert Account Information</h3>
+            <div class="form-group">
+                <label for="linkNew">Account Number</label>
+                <input type="number" id="linkNew" [(ngModel)]="linkNew" class="form-control">
+                <label for="newAccount">Password</label>
+                <input type="password" id="newAccount" [(ngModel)]="inputString" class="form-control">
+            </div>
+            <button class="btn btn-primary" style=" margin-left: 5%" (click)="toggleNewAccount = !toggleNewAccount; addChildAccount()">Submit</button>
+            <button class="btn btn-primary" style=" margin-left: 5%" (click)="toggleNewAccount = !toggleNewAccount; linkNew = 0; inputString = ''">Cancel</button>
+        </div>
+      </div>
+      <div *ngIf="toggleOverdraft" class="shade">
+        <div class="popup">
+            <h3>Manage Overdraft Protection</h3>
+            <div class="form-group">
+                <label for="input">Overdraft Threshold</label>
+                <input type="number" id="input" [(ngModel)]="inputNumber" class="form-control">
+            </div>
+            <button class="btn btn-primary" (click)="toggleOverdraft = !toggleOverdraft; overdraftAmount = inputNumber; enableOverdraftProtection()">Submit</button>
+            <button class="btn btn-primary" (click)="toggleOverdraft = !toggleOverdraft; inputNumber = 0">Cancel</button>
+        </div>
+      </div>
+      <div *ngIf="toggleTransfer" class="shade">
+        <div class="popup">
+            <h3>Manage Transfer Information</h3>
+            <div class="form-group">
+                <label for="check">Transfer Amount</label><input type="checkbox" id="check" [(ngModel)]="checkTransfer" class="form-control">
+                <label for="input">Transfer Amount</label>
+                <input type="number" id="input" [(ngModel)]="inputNumber" [disabled]="!checkTransfer" class="form-control">
+            </div>
+            <button class="btn btn-primary" (click)="toggleTransfer = !toggleTransfer; overdraftAmount = inputNumber; enableOverdraftProtection()">Submit</button>
+            <button class="btn btn-primary" (click)="toggleTransfer = !toggleTransfer; inputNumber = 0">Cancel</button>
+        </div>
+      </div>
+      <div *ngIf="toggleAnonymous" class="shade">
+        <div class="popup">
+            <h3>Anonymity</h3>
+            <div class="form-group">
+                <label for="input">Would you want to keep your child's information private?</label>
+                <select id="input" [(ngModel)]="inputBool" class="form-control">
+                    <option [selected]="anonymous"  value=true>Yes</option>
+                    <option [selected]="anonymous" value=false>No</option>
+                </select>
+            </div>
+            <button class="btn btn-primary" (click)="toggleAnonymous = !toggleAnonymous; anonymous = inputBool; changeAnonymous()">Submit</button>
+            <button class="btn btn-primary" (click)="toggleAnonymous = !toggleAnonymous">Cancel</button>
+        </div>
+      </div>
+    <div *ngIf="toggleNotification" class="shade">
+        <div class="popup">
+            <h3>Notification Settings</h3>
+            <div class="form-group">
+                <label for="pushNotifications">Push Notifications</label>
+                <select id="pushNotifications" [(ngModel)]="pushNotifications" class="form-control">
+                    <option value="enabled">Enabled</option>
+                    <option value="disabled">Disabled</option>
+                </select>
+                
+                <label for="smsNotifications">SMS Notifications</label>
+                <select id="smsNotifications" [(ngModel)]="smsNotifications" class="form-control">
+                    <option value="enabled">Enabled</option>
+                    <option value="disabled">Disabled</option>
+                </select>
+                
+                <label for="emailNotifications">Email Notifications</label>
+                <select id="emailNotifications" [(ngModel)]="emailNotifications" class="form-control">
+                    <option value="enabled">Enabled</option>
+                    <option value="disabled">Disabled</option>
+                </select>
+                
+                <label for="transactionThreshold">Transaction Threshold</label>
+                <input type="number" id="transactionThreshold" [(ngModel)]="transactionThreshold" class="form-control">
+                
+                <label for="depositMessages">Deposit Messages</label>
+                <select id="depositMessages" [(ngModel)]="depositMessages" class="form-control">
+                    <option value="enabled">Enabled</option>
+                    <option value="disabled">Disabled</option>
+                </select>
+
+                <label for="withdrawMessages">Deposit Messages</label>
+                <select id="withdrawMessages" [(ngModel)]="withdrawMessages" class="form-control">
+                    <option value="enabled">Enabled</option>
+                    <option value="disabled">Disabled</option>
+                </select>
+                
+            </div>
+            <button class="btn btn-primary" (click)="toggleNotification = !toggleNotification;">Save</button>
+        </div>
+    </div>
+    <div *ngIf="toggleLogin" class="shade">
+        <div class="popup" style="width: 60%;">
+          <h3>Login History</h3>
+          <div class="table-container">
+            <table>
+                <!-- Table header -->
+                <thead>
+                  <tr>
+                    <th>Login By</th>
+                    <th>Location</th>
+                    <th>Posted Date</th>
+                  </tr>
+                </thead>
+                <!-- Table body -->
+                <tbody>
+                  <tr *ngFor="let login of history">
+                    <td *ngIf="login.name === username">{{ login.name }}</td>
+                    <td *ngIf="login.name === username">{{ login.place }}</td>
+                    <td *ngIf="login.name === username">{{ login.date }}</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+          <button class="btn btn-primary" style="margin-left: 5%; margin-top: 5%;" (click)="toggleLogin = !toggleLogin">Close</button>
+        </div>
+      </div>
+    
+    </div>
+
+</body>
+    

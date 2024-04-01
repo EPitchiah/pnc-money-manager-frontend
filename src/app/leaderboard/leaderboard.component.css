@@ -1,0 +1,291 @@
+.leaderboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .leaderboard-header {
+    background-color: #ff5400;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    margin-top: 25px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    height: fit-content;
+    background-color: transparent;
+    width: 100%;
+    font-size: 150%;
+    padding-top: -40px;
+  }
+  
+  .leaderboard-content {
+    display: flex;
+    width: 100%;
+  }
+  
+  /* leaderboard.component.css */
+
+.left-half {
+    width: 50%;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    height: auto;
+    
+  }
+  
+  .left-half h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center;
+    width: 100%;
+  }
+  
+  
+  /* leaderboard.component.css */
+
+.right-half {
+    width: 50%;
+    padding: 20px;
+    background-color:#f5f5f5;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  
+  .image-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  
+  .table-container {
+    height: 420px; /* Adjust height as needed */
+    position: relative;
+    background-color: #f5f5f5;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-y: scroll; /* Allow vertical scrolling */
+    max-height: 100%; /* Adjust maximum height if needed */
+}
+
+  .leaderboard-table th,
+  .leaderboard-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .leaderboard-table th {
+    background-color: #ff5400;
+    position: sticky;
+    top: 0; /* Anchor to the top */
+  }
+  
+  .leaderboard-table thead th {
+    z-index: 1; /* Ensure thead stays above tbody */
+  }
+  
+  .graph-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .sort-indicator {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+  
+  .sort-indicator.asc {
+    border-bottom: 5px solid black; /* Upward arrow */
+  }
+  
+  .sort-indicator.desc {
+    border-top: 5px solid black; /* Downward arrow */
+  }
+
+  body{
+    margin-top: auto;
+    background-color: steelblue;
+    padding-bottom: 20px;
+    height: auto;
+    margin-bottom: 40px;
+    max-width: 100%;
+}
+
+.styling
+{
+    text-transform: uppercase;
+    padding: 15px 30px;
+    font-weight: bold;
+    border: none; 
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: steelblue;
+    color: #f5f5f5;
+}
+
+/* Custom CSS for Dropdown Menus */
+.form-group {
+  margin-bottom: 1px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.form-control:hover,
+.form-control:focus {
+  border-color: #707070;
+}
+
+.select-arrow {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+::placeholder {
+  color: #a9a9a9;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  gap: 1px; /* Gap between grid items */
+  margin: 0%;
+}
+
+/* If your container has a class */
+.container-class {
+  margin-left: 0;
+}
+
+/* If your container has an ID */
+#container-id {
+  margin-left: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.leaderboard-container {
+  max-width: 800px;
+  padding: 20px;
+  margin: 0;
+}
+
+.leaderboard-header h1 {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-shadow: -4px -4px 0 #000, 4px -4px 0 #000, -4px  4px 0 #000, 4px  4px 0 #000;
+  text-align: center;
+}
+
+.left-half, .right-half {
+  flex: 1;
+}
+
+.leaderboard-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.styling, .back-to-accounts {
+  background-color: #FF5400;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  display: block; /* Make buttons block level for better control */
+  margin: 10px auto; /* Center buttons horizontally */
+  text-align: center;
+}
+
+/* Responsive table */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .leaderboard-content {
+      flex-direction: column;
+      width: auto;
+  }
+
+  .left-half, .right-half {
+      width: 100%; /* Full width on smaller screens */
+  }
+
+  .styling, .back-to-accounts {
+      width: calc(50% - 20px); /* Adjust button width on smaller screens */
+  }
+}
+
+.leaderboard-container {
+  width: 100%;
+  max-width: 600px; /* Example max-width for smaller screens */
+  margin: 0 auto; /* Center align the container */
+}
+
+/* Media query for screens wider than 768px */
+@media (min-width: 768px) {
+  .leaderboard-container {
+    max-width: 80%; /* Increase max-width for larger screens */
+  }
+  
+  .left-half, .right-half {
+    /* Adjust padding, margins, or widths as necessary */
+  }
+
+  /* If you have specific styles for larger tables or grid layouts, adjust them here */
+}
+
+/* Media query for very large screens, e.g., wider than 1200px */
+@media (min-width: 1200px) {
+  .leaderboard-container {
+    max-width: 1200px; /* Set a max-width to prevent content from becoming too wide */
+  }
+}

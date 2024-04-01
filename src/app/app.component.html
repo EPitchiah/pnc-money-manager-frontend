@@ -1,0 +1,41 @@
+<header>
+  <nav>
+    <div class="logo" (click)="navigateToHome()">
+      <img src="assets/pnc-logo.png" alt="Logo">
+    </div>
+    <div class="dropdown" (click)="menu = !menu">
+      <button class="dropbtn">&#9776;</button> <!-- Hamburger icon Unicode character -->
+      <div class="dropdown-content" *ngIf="menu">
+          <!-- Menu content goes here -->
+          <ng-container *ngIf="username === 'parent'">
+              <button (click)="navigateToDashboard()">Home</button>
+              <button (click)="navigateToParentControl()">Parental Control</button>
+          </ng-container>
+          <ng-container *ngIf="username === 'child'">
+              <button (click)="navigateToAccounts()">Accounts</button>
+              <button (click)="navigateToLeaderboard()">Leaderboard</button>
+              <button (click)="navigateToCourses()">Courses</button>
+          </ng-container>
+          <ng-container *ngIf="username === 'child' || username === 'parent'">
+              <button (click)="navigateToSettings()">Settings</button>
+              <button (click)="navigateToLogin()">Sign Out</button>
+          </ng-container>        
+      </div>
+  </div>
+  
+  </nav>
+</header>
+
+
+
+<main style="display: flex; flex-direction: column; margin-top: 40px;">
+  <router-outlet></router-outlet>
+</main>
+
+<footer>
+  <ul>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms of Service</a></li>
+    <!-- Add more footer links as needed -->
+  </ul>
+</footer>

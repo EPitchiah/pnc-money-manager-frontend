@@ -1,0 +1,22 @@
+<body>
+    <div class="course-details" *ngIf="course !== null">
+        <h1>{{ course.title }}</h1>
+        <h2>Track: {{ course.track }}</h2>
+        <h3>{{ course.credits }}</h3>
+        <img [src]="course.image" alt="Course Image" style="width: 100%; max-width: 100%; height: auto;">
+        <p *ngIf="course.prerequisite !== null">Prerequisite: {{ course.prerequisite }}</p>
+        <p>{{ course.details }}</p>
+        <div class="chapter-section">
+            <h2>Table of Contents</h2>
+            <ul>
+            <li *ngFor="let chapter of course.tableOfContents | keyvalue; let i = index">
+                <strong>Chapter {{i+1}} - {{ chapter.value.title }}</strong>
+                <ul>
+                <li *ngFor="let subsection of chapter.value.subsections; let x = index">Section {{i+1}}.{{x+1}} - {{ subsection }}</li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+        <button class="styling" style="background-color: #FF5400; color: #f5f5f5; padding: 10px 20px; border: none; border-radius: 5px;margin-top: 10px;" (click)="backToCourses()">Back to Courses</button>    
+    </div>
+</body>
