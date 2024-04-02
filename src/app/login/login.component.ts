@@ -15,6 +15,7 @@ import { ParentalControl } from '../parental-control.service';
 export class LoginComponent {
   username: string = '';
   password: string = '';
+  toggleHelp: boolean = false;
 
   constructor(private router: Router, private authService: AuthService, private parentService: ParentalControl) {
     this.authService.logout();

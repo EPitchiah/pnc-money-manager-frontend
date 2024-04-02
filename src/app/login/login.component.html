@@ -12,5 +12,29 @@
             </div>
             <button type="submit" [disabled]="!username || !password">Login</button>
         </form>
+        <p (click)="toggleHelp  = !toggleHelp" style="color: steelblue; text-decoration: underline; cursor: pointer;">Need help logging in?</p>
+    </div>
+
+    <div *ngIf="toggleHelp" class="shade">
+        <div class="popup" style="width: 50%; min-width: 300px; max-height: 60vh; overflow-y: scroll;">
+            <div class="close-btn" (click)="toggleHelp = !toggleHelp">&#x2715;</div>
+            <div style="text-align: center;">
+                <h2 style="font-weight: bolder;">Thank you for visiting the Money Manager Page!</h2>
+                <h3 style="font-weight: bold;">Where Every Coin Counts</h3>
+                <div class="grid-container" style="font-size: smaller; text-align: left;">
+                    <div class="left-column">
+                        <p>If you are looking to view our program from the point of view as a child, enter the following credentials:</p>
+                        <p>Username: child</p>
+                        <p>Password: tdp14</p>
+                    </div>
+                    <div class="right-column">
+                        <p>If you are looking to view our program from the point of view as a parent, enter the following credentials:</p>
+                        <p>Username: parent</p>
+                        <p>Password: tdp14</p>
+                    </div>
+                </div>
+                <p style="font-style: italic;">Remember, all passwords are case-sensitive.</p>
+          </div>
+        </div>
     </div>
 </div>
