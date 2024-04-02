@@ -93,8 +93,6 @@ header {
     justify-content: center;
   }
   
-
-  
   footer ul {
     list-style-type: none;
     padding: 0;
@@ -195,6 +193,10 @@ nav, footer {
     main, footer ul {
         flex-direction: column;
     }
+      footer {
+        padding: 5px;
+      }
+    
 }
 
 /* Medium devices (tablets, 768px and up) */

@@ -1,4 +1,6 @@
 <body>
+  <button *ngIf="username === 'child'" class="back-button" (click)="navigateToAccounts()">Back</button>
+  <button *ngIf="username === 'parent'" class="back-button" (click)="navigateToHome()">Back</button>
     <div class="settings-container">
         <section class="section">
             <h2>Profile Settings</h2>
@@ -8,12 +10,11 @@
               <button (click)="togglePassword = !togglePassword">Change Password</button>
             </div>
             <div class="toggle-container">
-                <label for="remember-device">Remember Device</label>
-                <div class="toggle" (keyup.enter)="toggleRememberDevice()" tabindex="0">
-                  <input type="checkbox" id="remember-device" [(ngModel)]="rememberDevice" style="display: none;">
-                  <div class="toggle-handle" [class.active]="rememberDevice"></div>
-                </div>
+              <label for="remember-device">Remember Device</label>
+              <div class="toggle" [class.active]="rememberDevice" (click)="toggleRememberDevice()" tabindex="0">
+                <div class="toggle-handle"></div>
               </div>
+            </div>                  
           </section>
 
           <section class="section" *ngIf="username === 'parent'">
@@ -149,35 +150,35 @@
             <div class="form-group">
                 <label for="pushNotifications">Push Notifications</label>
                 <select id="pushNotifications" [(ngModel)]="pushNotifications" class="form-control">
-                    <option value="enabled">Enabled</option>
-                    <option value="disabled">Disabled</option>
+                    <option [selected]="pushNotifications === 'Enabled'" value="Enabled">Enabled</option>
+                    <option [selected]="pushNotifications === 'Disabled'" value="Disabled">Disabled</option>
                 </select>
                 
                 <label for="smsNotifications">SMS Notifications</label>
                 <select id="smsNotifications" [(ngModel)]="smsNotifications" class="form-control">
-                    <option value="enabled">Enabled</option>
-                    <option value="disabled">Disabled</option>
+                    <option [selected]="smsNotifications === 'Enabled'" value="Enabled">Enabled</option>
+                    <option [selected]="smsNotifications === 'Disabled'" value="Disabled">Disabled</option>
                 </select>
                 
                 <label for="emailNotifications">Email Notifications</label>
                 <select id="emailNotifications" [(ngModel)]="emailNotifications" class="form-control">
-                    <option value="enabled">Enabled</option>
-                    <option value="disabled">Disabled</option>
+                    <option [selected]="emailNotifications === 'Enabled'" value="Enabled">Enabled</option>
+                    <option [selected]="emailNotifications === 'Disabled'" value="Disabled">Disabled</option>
                 </select>
                 
                 <label for="transactionThreshold">Transaction Threshold</label>
-                <input type="number" id="transactionThreshold" [(ngModel)]="transactionThreshold" class="form-control">
+                <input type="number" id="transactionThreshold" [(ngModel)]="transactionThreshold" placeholder="transactionThreshold" class="form-control">
                 
                 <label for="depositMessages">Deposit Messages</label>
                 <select id="depositMessages" [(ngModel)]="depositMessages" class="form-control">
-                    <option value="enabled">Enabled</option>
-                    <option value="disabled">Disabled</option>
+                    <option [selected]="depositMessages === 'Enabled'" value="Enabled">Enabled</option>
+                    <option [selected]="depositMessages === 'Disabled'" value="Disabled">Disabled</option>
                 </select>
 
                 <label for="withdrawMessages">Deposit Messages</label>
                 <select id="withdrawMessages" [(ngModel)]="withdrawMessages" class="form-control">
-                    <option value="enabled">Enabled</option>
-                    <option value="disabled">Disabled</option>
+                    <option [selected]="withdrawMessages === 'Enabled'" value="Enabled">Enabled</option>
+                    <option [selected]="withdrawMessages === 'Disabled'" value="Disabled">Disabled</option>
                 </select>
                 
             </div>
@@ -207,7 +208,7 @@
                 </tbody>
               </table>
           </div>
-          <button class="btn btn-primary" style="margin-left: 5%; margin-top: 5%;" (click)="toggleLogin = !toggleLogin">Close</button>
+          <button class="btn btn-primary" style="margin-top: 5%;" (click)="toggleLogin = !toggleLogin">Close</button>
         </div>
       </div>
     

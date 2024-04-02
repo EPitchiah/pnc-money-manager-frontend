@@ -33,7 +33,7 @@
 <div class="flex-container">
   <div *ngIf="account" class="flex-item">
     <mat-grid-tile-header style="display: flex; width: 100%;">
-        <div style="width: 98%; align-items: center; text-align: center; background-color: #FF5400; border-style: double; border-radius: 10px; border-color: black;">
+        <div style="width: 98%; text-align: center; background-color: #FF5400; border-style: double; border-radius: 10px; border-color: black;">
             <h3 style="color: white; align-items: center;">Spending Account</h3>
         </div>
       </mat-grid-tile-header>
@@ -46,7 +46,7 @@
     </div>
     <div *ngIf="account" class="flex-item">
       <mat-grid-tile-header style="display: flex; width: 100%;">
-          <div style="width: 98%; align-items: center; text-align: center; background-color: #FF5400; border-style: double; border-radius: 10px; border-color: black;">
+          <div style="width: 98%; text-align: center; background-color: #FF5400; border-style: double; border-radius: 10px; border-color: black;">
               <h3 style="color: white; align-items: center;">Savings Account</h3>
           </div>
         </mat-grid-tile-header>
@@ -117,7 +117,6 @@
     </mat-grid-tile-header>
       <img src="assets/pie-chart-image.png" alt="Pie Chart" style="width: 100%; display: block;">
       <button style="background-color: #FF5400; color: white; text-indent: 0%;" mat-raised-button class="styling" (click)="toggleLog = !toggleLog">Transactions</button>
-      <button style="background-color: #FF5400; color: white;" mat-raised-button class="styling">View Goals</button>
   </div>
   <div class="flex-item">
     <mat-grid-tile-header style="display: flex; width: 100%">

@@ -1,15 +1,17 @@
 .pics {
   background-image: url('../../assets/pnc-background.jpeg');
-  background-size: cover;
-  background-position: center;
+  background-size: cover; /* Ensures the background covers the viewport */
+  background-position: right center; /* Anchors the image on the right */
   margin: 0;
   padding: 0;
   font-family: 'Courier New', Courier, monospace;
-  height: 100vh;
-  background-color: transparent;
-  width: 100%;
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full viewport width */
   position: fixed;
+  background-color: transparent; /* Ensures no background color is visible */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
 }
+
 .login-container {
   max-width: 400px;
   margin: auto;

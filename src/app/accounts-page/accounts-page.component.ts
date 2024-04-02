@@ -125,14 +125,7 @@ export class AccountsPageComponent {
         this.savingsLog = this.account.savingsAccount.transactions;
         this.spendingLog = this.account.spendingAccount.transactions;
         window.alert('New Account has been Linked!');
-        if(this.username === 'parent')
-        {
-          this.router.navigate(['/home']);
-        }
-        else
-        {
-          this.router.navigate(['/settings']);
-        }
+        this.router.navigate(['/settings']);
       }
     }
     else

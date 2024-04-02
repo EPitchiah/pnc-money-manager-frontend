@@ -19,7 +19,6 @@
     color: white;
     font-weight: bold;
     letter-spacing: 4px;
-    text-shadow: -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000, 4px 4px 0 #000;
     font-size: clamp(1rem, 3.5vw, 1.75rem); /* Responsive font size */
 }
 

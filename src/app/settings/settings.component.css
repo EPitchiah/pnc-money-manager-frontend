@@ -4,15 +4,17 @@ body {
     height: 90vh;
 }
 
+
 .settings-container {
     color: #FF5400;
     padding: 20px;
+    min-width: 250px;
   }
   
   .section {
     padding: 20px;
     background-color: #f5f5f5;
-    margin: 70px;
+    margin-bottom: 70px;
     border-radius: 8px;
   }
   
@@ -75,56 +77,42 @@ input {
     margin-bottom: 20px; /* Add some space between sections */
   }
   
+  .toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
   .toggle {
-    display: inline-block;
-    width: 40px;
-    height: 20px;
-    background-color: #ccc;
-    border-radius: 10px;
+    position: relative;
+    width: 50px; /* Width of the toggle */
+    height: 24px; /* Height of the toggle */
+    background-color: #ccc; /* Default background color */
+    border-radius: 12px; /* Rounded corners for toggle */
     cursor: pointer;
+    transition: background-color 0.2s ease; /* Smooth transition for background */
   }
   
   .toggle-handle {
-    width: 30px; /* Width of the handle */
-    height: 30px; /* Height of the handle */
-    background-color: white; /* Handle color */
-    border-radius: 50%; /* Circle shape */
     position: absolute;
-    left: 0; /* Initial position */
-    transition: transform 0.3s ease; /* Smooth sliding animation */
+    top: 2px;
+    left: 2px; /* Start position for "false" state */
+    width: 20px; /* Width of the handle */
+    height: 20px; /* Height of the handle */
+    background-color: #fff; /* Handle color */
+    border-radius: 50%; /* Circular handle */
+    transition: left 0.2s ease; /* Transition for sliding effect */
   }
   
+  /* Adjustments when 'rememberDevice' is true */
+  .toggle.active {
+    background-color: #4CAF50; /* Active state background color */
+  }
   
   .toggle.active .toggle-handle {
-    left: 22px;
-  }    
-
-  .toggle-container {
-    display: flex;
-    align-items: center; /* Align items vertically */
+    left: calc(100% - 22px); /* Moves handle to the right; adjust '22px' as needed based on handle size and padding */
   }
   
-  .toggle-container label {
-    margin-right: 10px;
-  }
-  
-  .toggle {
-    width: 60px; /* Width of the toggle */
-    height: 30px; /* Height of the toggle */
-    background-color: #ccc; /* Default background color */
-    border-radius: 15px; /* Rounded corners */
-    position: relative;
-    cursor: pointer;
-  }
-  
-  .toggle input[type="checkbox"] {
-    display: none; /* Hide the checkbox */
-  }
-  
-
-  .toggle-handle.active {
-    transform: translateX(30px); /* Slide to the right when active */
-  }
   .table-container {
     max-height: 50vh; /* Adjust the maximum height as needed */
     overflow-y: auto; /* Enable vertical scrolling */
@@ -159,3 +147,18 @@ input {
     text-align: center;
   }
   
+
+.back-button {
+  margin-top: 30px;
+  margin-left: 10%;
+  background-color: #FF5400;
+  color: #f5f5f5;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  min-width: 100px;
+  max-width: 10vh;
+  cursor: pointer;
+  text-align: center;
+  text-indent: 0%;
+}

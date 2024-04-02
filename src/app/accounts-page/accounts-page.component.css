@@ -217,15 +217,14 @@ body{
   margin: 0 1% 20px 1%; /* Adjusted for spacing */
   text-indent: 10%;
 }
-
 .flex-container {
   display: flex;
   flex-wrap: wrap; /* Allows items to wrap on smaller screens */
   justify-content: center; /* Centers items horizontally */
   width: 100%; /* Adjust based on your preference */
+  align-items: stretch; /* Stretches items to fill the container height */
 }
 
-/* Flex Items */
 .flex-item {
   background-color: #f5f5f5;
   border: double 3px black;
@@ -233,11 +232,11 @@ body{
   margin: 10px;
   padding: 20px;
   max-width: 50%; /* Adjusts width accounting for margin */
+  min-width: 300px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start; /* Aligns content to the top */
   text-indent: 20px;
 }
 
@@ -265,11 +264,6 @@ body{
     width: 100%; /* Full width for smaller screens */
     padding: 10px;
     text-indent: 0;
-  }
-
-  .flex-container
-  {
-    
   }
 
   .flex-item h2, .flex-item h3, .flex-item table {

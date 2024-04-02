@@ -48,7 +48,7 @@ export class SettingsComponent implements OnInit{
   pushNotifications: string = 'Disabled';
   smsNotifications: string = 'Disabled';
   emailNotifications: string = 'Disabled';
-  transactionThreshold: number = 0;
+  transactionThreshold: number = 10;
   depositMessages: string = 'Disabled';
   withdrawMessages: string = 'Disabled';
   
@@ -112,6 +112,16 @@ export class SettingsComponent implements OnInit{
   
   toggleRememberDevice() {
     this.rememberDevice = !this.rememberDevice;
+  }
+  
+  navigateToHome()
+  {
+    this.router.navigate(['/home']);
+  }
+
+  navigateToAccounts()
+  {
+    this.router.navigate(['/accounts']);
   }
 
   updateContactInfo() {
